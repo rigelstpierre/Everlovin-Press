@@ -1,0 +1,571 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"re",
+				"repeat"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"h",
+				"h2	Tag"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"text-",
+				"text-align"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"im",
+				"img"
+			],
+			[
+				"bo",
+				"both"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"old",
+				"old-regular"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"no",
+				"none"
+			],
+			[
+				"op",
+				"op	opacity: [for Safari, FF & IE]"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"sc",
+				"section	Tag"
+			],
+			[
+				"cl",
+				"cl	clear: both"
+			],
+			[
+				"cne",
+				"center"
+			],
+			[
+				"d",
+				"d	display: none"
+			],
+			[
+				"cu",
+				"cu	cursor: pointer"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"fut",
+				"futura-bold"
+			],
+			[
+				"st",
+				"strong	Tag"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"hea",
+				"header	Tag"
+			],
+			[
+				"ff",
+				"ff5d54"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"tx",
+				"text-decoration"
+			],
+			[
+				"i",
+				"img	Tag"
+			],
+			[
+				"ja",
+				"javascripts"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/index.html",
+			"settings":
+			{
+				"buffer_size": 4940,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/work.html",
+			"settings":
+			{
+				"buffer_size": 4220,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/meetandgreet.html",
+			"settings":
+			{
+				"buffer_size": 5718,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/hirethepressman.html",
+			"settings":
+			{
+				"buffer_size": 5151,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/capabIities.html",
+			"settings":
+			{
+				"buffer_size": 5978,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/custom.html",
+			"settings":
+			{
+				"buffer_size": 3627,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "style.scss",
+			"settings":
+			{
+				"buffer_size": 14290,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 276.0,
+		"selected_items":
+		[
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/work.html",
+		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/index.html",
+		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/stylesheets/style.scss",
+		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/javascripts/script.js",
+		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/javascripts/libs/jquery.jribbble-1.0.0.ugly.js",
+		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/stylesheets/normalize.css",
+		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/stylesheets/style.css",
+		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/stylesheets/base.css",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/CMS/site/snippets/footer.php",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/CMS/content/04-contact/contact.txt",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/CMS/assets/styles/style.css",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/CMS/content/04-blog/01-first-article/blogarticle.txt",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/CMS/site/snippets/header.php",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/CMS/content/site.txt",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/CMS/content/03-about/about.txt",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/CMS/content/02-blog/blog.txt",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/CMS/content/01-portfolio/portfolio.txt",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/CMS/content/04-blog/blog.txt",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/CMS/content/01-about/about.txt",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/stylesheets/style.scss",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/about.html",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/blog.html",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/index.html",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/wordpress/wp-content/themes/rigelstpierre/css/style.scss",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/wordpress/wp-content/themes/rigelstpierre/css/style.css",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/wordpress/wp-content/themes/theme_name/css/style.css",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/wordpress/wp-content/themes/theme_name/header.php",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/wordpress/wp-content/themes/theme_name/index.php",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/wordpress/wp-content/themes/theme_name/functions.php",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/stylesheets/normalize.css",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/javascripts/script.js",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/javascripts/libs/jquery.twitter.js",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/stylesheets/jquery.twitter.css",
+		"/Users/rigelstpierre/Dropbox/Everything/Rigel St. Pierre/2012 Site/javascripts/libs/lastfm.js",
+		"/Users/rigelstpierre/hello.coffee"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"					",
+			"&",
+			"144057",
+			">",
+			"@",
+			"tr"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 6,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/index.html",
+					"settings":
+					{
+						"buffer_size": 4940,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1463,
+								1463
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/work.html",
+					"settings":
+					{
+						"buffer_size": 4220,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1486,
+								1466
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/meetandgreet.html",
+					"settings":
+					{
+						"buffer_size": 5718,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1475,
+								1475
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/hirethepressman.html",
+					"settings":
+					{
+						"buffer_size": 5151,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2233,
+								2245
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 616.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/capabIities.html",
+					"settings":
+					{
+						"buffer_size": 5978,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2095,
+								2186
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 655.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "/Users/rigelstpierre/Dropbox/Everything/Everlovin/HTML:CSS/custom.html",
+					"settings":
+					{
+						"buffer_size": 3627,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2083,
+								2083
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 692.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "style.scss",
+					"settings":
+					{
+						"buffer_size": 14290,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12627,
+								12627
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SASS/Syntaxes/SASS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 9779.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 240.0,
+	"status_bar_visible": true
+}

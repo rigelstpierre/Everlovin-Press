@@ -1,0 +1,828 @@
+@import url("normalize.css");
+@import url("form.css");
+@import url("jquery.twitter.css");
+
+@mixin futura-bold {
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 700;
+}
+@mixin futura-book {
+	font-family: "futura-pt",sans-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+@mixin old-regular {
+	font-family: "old-standard",serif;
+	font-style: normal;
+	font-weight: 400;
+}
+@mixin old-regular-bold {
+	font-family: "old-standard",serif;
+	font-style: normal;
+	font-weight: 700;
+}
+@mixin textures {
+	width: 480px;
+	height: 240px;
+	float: left;
+	z-index: 1;
+	margin: 0 0 0 -480px;
+	text-decoration: none;
+}
+@mixin texture-h2 {
+	width: 240px;
+	float: right;
+	text-align: center;
+	color: #fff;
+	padding: 75px 0 0 0px;
+}
+
+$orange: #ff5e2e;
+$light-orange: #ff6e43;
+$darkblue: #144057;
+
+/* @group Boilerplate Overrides
+----------------------------------------------- */
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+/* @end */
+
+h1 {
+	
+}
+
+h2 {
+	@include futura-bold;
+	font-size: 14px;
+	color: #000;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+
+h3 {
+	@include futura-bold;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+
+h4 {
+	@include futura-bold;
+	font-size: 14px;
+	color: #212121;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	text-shadow: 1px 1px 1px #ffffff;
+	filter: dropshadow(color=#ffffff, offx=1, offy=1);
+}
+
+.btn, .btn:visited {
+	@include futura-bold;
+	text-transform: uppercase;
+	font-size: 20px;
+	color: #fff;
+	width: 240px;
+	height: 61px;
+	display: block;
+	background: url(../images/big-btn.png) 0 0 no-repeat;
+	text-decoration: none;
+	text-align: center;
+	padding: 30px 0 0 0;
+	&:hover {
+		background: url(../images/big-btn.png) 0 -92px no-repeat;
+		color: #fff;	
+	}
+	&:active {
+		background: url(../images/big-btn.png) 0 -182px no-repeat;
+	}
+}
+
+body {
+	background: #fff url(../images/speckle.jpg) repeat;
+}
+
+.container {
+	width: 960px;
+	margin: 0px auto;
+}
+
+header {
+	background: #fff;
+	height: 90px;
+	margin: 0 auto;
+	img {
+		margin: 20px 0 0 20px;
+		float: left;
+	}
+	nav {
+		float: right;
+		margin: 40px 0 0 0;
+		ul {
+			li {
+				display: inline;
+				margin: 0 70px 0 0;
+				a, a:visited{
+					@include futura-bold;
+					color: $orange;
+					text-decoration: none;
+					text-transform: uppercase;
+					font-size: 14px;
+					letter-spacing: 0.3em;
+					&:hover {
+						color: #000;
+					}
+				}
+				a.active {
+					color: #000;
+				}
+			}
+		}
+	}
+}
+.slider {
+	height: 480px;
+}
+#main {
+	.see-work-top {
+		p {
+			@include old-regular;
+			font-size: 38px;
+			color: $darkblue;
+			line-height: 52px;
+			letter-spacing: 2px;
+		}
+		ul {
+			width: 960px;
+			height: 91px;
+			margin-bottom: 70px;
+			li {
+				float: left;
+				list-style: none;
+				margin: 0 66px 0 0;
+			}
+		}
+	}
+	.featured-content {
+		width: 960px;
+		height: 480px;
+		border-top: 1px dotted;
+		.smallbox {
+			width: 480px;
+			height: 240px;
+			float: left;
+			z-index: 0;
+			display: block;
+			img {
+				float: left;
+			}
+		}
+		.largebox {
+			width: 480px;
+			height: 240px;
+			float: left;
+			display: block;
+			text-decoration: none;
+			h2 {
+				font-size: 24px;
+				color: #fff;
+				padding: 60px 30px 0 30px;
+			}
+		}
+		.texture-1 {
+			@include textures;
+			background: url(../images/textures/texture-1.png) no-repeat;
+			&:hover {
+				background:  url(../images/textures/blue.png) no-repeat 240px 0;
+			}
+			h2 {
+				@include texture-h2;	
+			}
+		}
+		.texture-2 {
+			@include textures;
+			background: url(../images/textures/texture-2.png) no-repeat;
+			&:hover {
+				background:  url(../images/textures/orange.png) no-repeat 240px 0;
+			}
+			h2 {
+				@include texture-h2;	
+			}
+		}
+		.texture-3 {
+			@include textures;
+			background: url(../images/textures/texture-3.png) no-repeat;
+			&:hover {
+				background:  url(../images/textures/offwhite.png) no-repeat 240px 0;
+			}
+			h2 {
+				@include texture-h2;
+				color: $orange;	
+			}
+		}
+		.blue {
+			background: $darkblue;
+		}
+		.orange {
+			background: $orange;
+			&:hover {
+				background: $light-orange;
+			}
+		}
+		.white {
+			background: #fff;
+		}
+	}
+	.about {
+		@include old-regular;
+		font-size: 38px;
+		color: $darkblue;
+		line-height: 52px;
+		letter-spacing: 3px;
+		h2 {
+			background: url(../images/about-title-line.png) no-repeat 0 20px;
+		}
+		p {
+			margin: 0px;
+		}
+	}
+	.contact {
+		height: 39px;
+		background: url(../images/contact-bg.png) no-repeat;
+		margin: 40px 0 40px 0;
+		p {
+			@include futura-book;
+			text-transform: uppercase;
+			font-size: 12px;
+			color: $darkblue;
+			line-height: 38px;
+			letter-spacing: 0.3em;
+			margin: 0 0 0 12px;
+			strong {
+				@include futura-bold;
+			}
+			a {
+				color: $orange;
+				text-decoration: none;
+			}
+		}
+	}
+	.social {
+		height: 405px;
+		h2 {
+			background: url(../images/social-title-line.png) no-repeat 0 5px;
+		}
+		.dribbble {
+			width: 430px;
+			height: 370px;
+			float: left;
+			background: url(../images/dribbble-bg.png) no-repeat;
+			margin: 35px 0 35px 45px;
+		}
+		.twitter {
+			width: 430px;
+			height: 370px;
+			float: left;
+			background: url(../images/twitter-bg.png) no-repeat;
+			margin: 35px 0 35px 10px;
+		}
+	}
+	.furthermore {
+		clear: both;
+		padding: 20px 0 0 0;
+		h2 {
+			background: url(../images/furthermore-title-line.png) no-repeat 0 5px;
+		}
+	}
+	.meet-greet-welcome {
+		height:480px;
+		background: #1a1a1a;
+		div {
+			width: 336px;
+			margin: 0 auto;
+			padding-top: 60px;
+		}
+		h2 {
+			font-size: 245px;
+			line-height: 1px;
+			padding: 125px 0 0 0;
+			margin: 0;
+			@include futura-bold;
+			color: #ffffff;
+			text-align: center;
+			text-shadow: 5px 5px 2px $orange;
+			letter-spacing: normal;
+		}
+	}
+	.reach-us {
+		letter-spacing: 3px;
+		h2 {
+			background: url(../images/reachus-title-line.png) no-repeat 0 5px;
+		}
+		p {
+			margin: 0px;
+		}
+		div {
+			float: left;
+			margin: 60px 0;
+			p{
+				@include futura-bold;
+				text-transform: uppercase;
+				font-size: 12px;
+				line-height: 26px;
+				span {
+					margin: 0 0 0 30px;
+					font-size: 24px;
+					@include old-regular-bold;
+					color: $darkblue;
+					text-transform: none;
+				}
+			}
+		}
+		ul {
+			float: left;
+			margin: 60px 0 60px 60px;
+			li {
+				list-style: none;
+				@include futura-bold;
+				text-transform: uppercase;
+				font-size: 12px;
+				padding: 0;
+				margin: 0;
+				a {
+					color: $orange;
+					@include old-regular-bold;
+					font-size: 24px;
+					text-transform: none;
+					text-decoration: none;
+					margin: 0 0 0 30px;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	.meet-the-press-man {
+		clear: both;
+		letter-spacing: 3px;
+		h2 {
+			background: url(../images/reachus-title-line.png) no-repeat 0 5px;
+		}
+		div {
+			width: 790px;
+			height: 440px;
+			margin: 0 auto;
+			border: 1px solid #000;
+			margin-top: 50px;
+			background: #000;
+			img {
+				float: left;
+			}
+			aside {
+				width: 331px;
+				float: left;
+				margin: 50px 0 0 30px;
+				h3 {
+					text-align: left;
+				}
+				h4 {
+					text-align: left;
+					color: $orange;
+					text-shadow: none;
+					font-size: 10px;
+				}
+				p {
+					@include old-regular;
+					color: #fff;
+				}
+			}
+		}
+	}
+	.peek {
+		clear: both;
+		height: 1000px;
+		margin: 50px 0 0 0;
+		h2 {
+			background: url(../images/peek-title-line.png) no-repeat 0 5px;
+		}
+		img {
+			float: left;
+		}
+	}
+	.friends {
+		clear: both;
+		margin: 50px 0 75px 0;
+		width: 960px;
+		height: 250px;
+		h2 {
+			background: url(../images/our-friends.png) no-repeat 0 5px;
+		}
+		ul {
+			padding: 0;
+			@include old-regular;
+			width: 890px;
+			margin: 0 auto;
+			margin-top: 25px;
+			li {
+				float: left;
+				list-style: none;
+				font-size: 21px;
+				margin: 0 0 30px 30px;
+				width: 250px;
+				text-align: center;
+				a, a:visited {
+					text-decoration: none;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+	.hirethepressman {
+		p:first-child {
+			@include old-regular;
+			color: $darkblue;
+			font-size: 34px;
+		}
+		.services {
+			width: 960px;
+			height: 690px;
+			h2 {
+				background: url(../images/services-title-line.png) no-repeat 0 5px;
+			}
+			a {
+				text-decoration: none;
+			}
+			div {
+				width: 390px;
+				height: 310px;
+				float: left;
+				margin: 0 10px 10px 0;
+				h3 {
+					font-size: 40px;
+					letter-spacing: 0;
+				}
+			}
+			.blue {
+				background: $darkblue;
+				margin-top: 50px;
+				margin-left: 85px;
+				h3 {
+					margin-top: 100px;
+				}
+				&:hover {
+					background: #426577;
+				}
+			}
+			.orange {
+				margin-top: 50px;
+				background: $orange;
+				h3 {
+					margin-top: 80px;
+				}
+				&:hover {
+					background: #ff6e43;
+				}
+			}
+			.white {
+				border: 1px solid #d0d0d0;
+				background: #fff;
+				margin-left: 85px;
+				width: 389px;
+				h3 {
+					margin-top: 100px;
+					color: $darkblue;
+				}
+				&:hover{
+					background: #eceff1;
+				}
+			}
+			.black {
+				background: #1f1f1f;
+				h3 {
+					margin-top: 80px;
+				}
+				&:hover{
+					background: #363636;
+				}
+			}
+		}
+		.products-services {
+			clear: both;
+			width: 960px;
+			height: 315px;
+			margin: 50px 0 0 0;
+			h2 {
+				background: url(../images/products-title-line.png) no-repeat 0 5px;
+			}
+			ul {
+				width: 260px;
+				height: 200px;
+				padding: 0;
+				margin: 50px 0 0 45px;
+				float: left;
+				li {
+					list-style: none;
+					color: $darkblue;
+					margin: 0 0 30px 0;
+					font-size: 21px;
+					text-align: center;
+					@include old-regular;
+				}
+			}
+		}
+		.unusual {
+			clear: both;
+			width: 960px;
+			padding: 50px 0 50px 0 ;
+			h2 {
+				background: url(../images/unusual-title-line.png) no-repeat 0 5px;
+			}
+			p {
+				font-size: 21px;
+				color: $darkblue;
+				@include old-regular;
+				padding: 0 125px;
+			}
+		}
+	}
+	nav.services {
+		width: 890px;
+		height: 50px;
+		margin: 0 0 50px 40px;
+		padding-top: 50px;
+		ul {
+			li {
+				float: left;
+				margin: 0 30px 0 0;
+			}
+			.custom a, a:visited {
+				display: block;
+				@include futura-bold;
+				text-align: center;
+				font-size: 14px;
+				color: #fff;
+				padding: 12px 0 0 0;
+				text-decoration: none;
+				width: 193px;
+				height: 34px;
+				background: url(../images/custom.png) no-repeat 0 0;
+				&:hover {
+					background: url(../images/custom.png) no-repeat 0 -47px;
+				}
+				&:active {
+					background: url(../images/custom.png) no-repeat 0 -95px;
+				}
+			}
+			.pricing a, a:visited {
+				display: block;
+				@include futura-bold;
+				text-align: center;
+				font-size: 14px;
+				color: #fff;
+				padding: 12px 0 0 0;
+				text-decoration: none;
+				width: 179px;
+				height: 34px;
+				background: url(../images/pricing.png) no-repeat 0 0;
+				&:hover {
+					background: url(../images/pricing.png) no-repeat 0 -47px;
+				}
+				&:active {
+					background: url(../images/pricing.png) no-repeat 0 -95px;
+				}
+			}
+			.process a, a:visited {
+				display: block;
+				@include futura-bold;
+				text-align: center;
+				font-size: 14px;
+				color: #fff;
+				padding: 12px 0 0 0;
+				text-decoration: none;
+				width: 245px;
+				height: 34px;
+				background: url(../images/process.png) no-repeat 0 0;
+				&:hover {
+					background: url(../images/process.png) no-repeat 0 -47px;
+				}
+				&:active {
+					background: url(../images/process.png) no-repeat 0 -94px;
+				}
+			}
+			.wholesale a, a:visited {
+				display: block;
+				@include futura-bold;
+				text-align: center;
+				font-size: 14px;
+				color: #fff;
+				padding: 12px 0 0 0;
+				text-decoration: none;
+				width: 143px;
+				height: 34px;
+				background: url(../images/wholesale.png) no-repeat 0 0;
+				&:hover {
+					background: url(../images/wholesale.png) no-repeat 0 -48px;
+				}
+				&:active {
+					background: url(../images/wholesale.png) no-repeat 0 -95px;
+				}
+			}
+		}
+	}
+	.capabilities {
+		background: #000;
+		padding: 0 0 100px 0;
+		.what-we-do {
+			clear: both;
+			width: 790px;
+			margin: 50px 0 0 0;
+			margin: 0 auto;
+			background: #fff;
+			h3 {
+				font-size: 36px;
+				text-align: center;
+				color: #262626;
+				letter-spacing: 0.2em;
+				text-shadow: 2px 1px 1px $orange;
+				padding: 50px 0 50px 0;
+			}
+			h2 {
+				background: url(../images/process-title-line.png) no-repeat 75px 0px;
+			}
+			p{
+				font-size: 21px;
+				color: $darkblue;
+				@include old-regular;
+				padding: 50px 80px 50px 80px;
+			}
+			img {
+				margin: 0 0 0 80px;
+			}
+			.capabilities-list {
+				padding: 0 0 50px 0;
+				h4 {
+					color: $orange;
+					text-align: left;
+					padding: 0 50px;
+					margin: 0;
+					letter-spacing: 0.2em;
+				}
+				p {
+					padding: 0 50px;
+					margin: 0;
+				}
+			}
+		}
+	}
+	.custom-quotes {
+		background: url(../images/lines-bg.jpg) repeat;
+		padding: 0 0 100px 0;
+		.quote-form {
+			clear: both;
+			width: 790px;
+			margin: 25px 0 0 0;
+			margin: 0 auto;
+			background: $darkblue;
+			h3 {
+				font-size: 36px;
+				text-align: center;
+				color: #fff;
+				letter-spacing: 0.2em;
+				text-shadow: 2px 1px 1px $orange;
+				padding: 50px 0 50px 0;
+			}
+			h4 {
+				clear: both;
+				text-align: left;
+				color: #fff;
+				text-shadow: none;
+			}
+			form {
+				width: 718px;
+				padding: 0 0 40px 0;
+				margin: 0 0 0 30px;
+				.radio {
+					height: 25px;
+					width: 19px;
+					float:left;
+					margin: 0 0 3px;
+					padding: 0 0 0 26px;
+					background: url("radio.png");
+					background-repeat:no-repeat;
+					cursor: default;
+				}
+				label {
+					@include old-regular;
+					color: #fff;
+					font-size: 21px;
+					float: left;
+					padding: 0 55px 60px 10px;
+				}
+				input[type="text"], input[type="email"] {
+					width: 270px;
+					@include old-regular;
+					border-radius: 0;
+					margin: 5px 0 0 0;
+				}
+				textarea {
+					width: 510px;
+					height: 240px;
+				}
+			}
+		}
+	}
+}
+footer {
+	clear: both;
+	height: 215px;
+	background: $orange;
+	.newsletter {
+		width: 370px;
+		height: 120px;
+		float: left;
+		margin: 25px 0 0 40px;
+		form {
+			height: 37px;
+		}
+		input[type=email] {
+			border: none;
+			width: 240px;
+			height: 20px;
+			border-radius: 0px;
+			@include old-regular;
+			color: #cccccc;
+			font-size: 14px;
+			float: left;
+		}
+		input[type=submit] {
+			float: left;
+			border: none;
+			width: 95px;
+			height: 37px;
+			background: url(../images/signup-btn.png) no-repeat;
+			margin: 0 0 0 13px;
+			@include futura-bold;
+			color: #fff;
+			text-transform: uppercase;
+			letter-spacing: 0.3em;
+		}
+		p {
+			@include old-regular;
+			color: #fff;
+			text-transform: none;
+			font-size: 14px;
+			letter-spacing: normal;
+		}
+	}
+	.lastword {
+		width: 370px;
+		height: 110px;
+		float: right;
+		margin: 25px 40px 0 0; 
+		p {
+			color: #fff;
+			font-size: 40px;
+			text-align: center;
+			margin: 0;
+			letter-spacing: 0.1em;
+			@include futura-bold;
+		text-transform: uppercase;
+		}
+	}
+	span p{
+		clear: both;
+		@include futura-bold;
+		text-transform: uppercase;
+		font-size: 10px;
+		color: #000;
+		letter-spacing: 0.3em;
+		padding-top: 40px;
+	}
+}
+
+
+/* @group Classes
+----------------------------------------------- */
+img.alignright {
+	margin: 0 0 2px 10px;
+	display: inline;
+	border: 3px solid #376092;
+}
+
+img.alignleft {
+	margin: 0 10px 2px 0;
+	display: inline;
+	border: 3px solid #376092;
+}
+/* @end */
+
+
+

@@ -1,0 +1,19 @@
+<div class="video-wrapper">
+    <div id="video_<?php echo $id; ?>_<?php echo $slidedeck['id']; ?>-<?php echo $deck_iteration; ?>-<?php echo $slide_counter; ?>" class="<?php echo $service; ?> video-container"></div>
+    <div class="cover" style="background-image: url('<?php echo $image; ?>');">
+        <div class="slide-content">
+            <div class="slide-title-wrapper">
+            	<h3 class="slide-title">
+            	    <span class="before-rule">&nbsp;</span>
+            		<?php if( $slidedeck['options']['linkTitle'] == true ): ?><a href="<?php echo $permalink; ?>" target="<?php echo $target; ?>"><?php endif; ?>
+                        <?php echo $title; ?>
+                    <?php if( $slidedeck['options']['linkTitle'] == true ): ?></a><?php endif; ?>
+                	<span class="after-rule">&nbsp;</span>
+            	</h3>
+            </div>
+        	<div class="slide-text"><?php echo $excerpt; ?> <a href="<?php echo $permalink; ?>" class="readmore accent-color" target="<?php echo $target; ?>"><?php _e( "...more", $this->namespace ); ?></a></div>
+            <div class="accent-bar-top accent-color-background">&nbsp;</div>
+        </div>
+        <a class="play-video-button play" href="#play">Click To Play</a>
+    </div>
+</div>

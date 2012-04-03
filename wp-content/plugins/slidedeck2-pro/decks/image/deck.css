@@ -1,0 +1,226 @@
+#slidedeck-medialibrary-images .media-image {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    float: left;
+    margin: 10px;
+    padding: 3px;
+    background: #fff;
+    border: 1px solid #d1d1d1;
+    -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.07);
+    -moz-box-shadow: 0 0 3px rgba(0,0,0,0.07);
+    -o-box-shadow: 0 0 3px rgba(0,0,0,0.07);
+    box-shadow: 0 0 3px rgba(0,0,0,0.07);
+}
+#slidedeck-medialibrary-images .media-image a.slidedeck-medialibrary-image-properties { cursor: move; }
+#slidedeck-medialibrary-images .media-image .remove {
+    position: absolute;
+    display: block;
+    margin: 0;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    background: url('images/delete.png') 0 0;
+    text-indent: -999em;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    -ms-filter: "Alpha(opacity=0)";
+    -webkit-transition: opacity 0.25s;
+    -moz-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+}
+#slidedeck-medialibrary-images .media-image .remove:hover { background-position: 0 -30px; }
+#slidedeck-medialibrary-images .media-image:hover .remove {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    -ms-filter: "Alpha(opacity=100)";
+}
+#slidedeck-medialibrary-images .media-image .tip {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	width: 80px;
+	margin-left: -40px;
+	cursor: pointer;
+	text-align: center;
+	font: bold 10px/16px sans-serif;
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+    -webkit-opacity: 0;
+    -moz-opacity: 0;
+    -o-opacity: 0;
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    -ms-filter: "Alpha(opacity=0)";
+    -webkit-transition: opacity 0.25s;
+    -moz-transition: opacity 0.25s;
+    transition: opacity 0.25s;
+}
+#slidedeck-medialibrary-images .media-image:hover .tip {
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    -o-opacity: 1;
+    opacity: 1;
+    filter: Alpha(opacity=100);
+    -ms-filter: "Alpha(opacity=100)";
+}
+#slidedeck-medialibrary-images .ui-sortable-placeholder {
+    visibility: visible !important;
+    background: rgba(0,0,0,0.25) !important;
+    -webkit-box-shadow: 0 0 10px 5px rgba(20,172,235,1);
+    -moz-box-shadow: 0 0 10px 5px rgba(20,172,235,1);
+    -o-box-shadow: 0 0 10px 5px rgba(20,172,235,1);
+    box-shadow: 0 0 10px 5px rgba(20,172,235,1);
+}
+
+#slidedeck-medialibrary-properties-simplemodal {
+    width: 400px;
+    border: none;
+}
+#slidedeck-medialibrary-properties-simplemodal .slidedeck-header {
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    -o-border-top-left-radius: 4px;
+    -o-border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+#slidedeck-medialibrary-image-properties-form {
+    border: 1px solid #d1d1d1;
+}
+#slidedeck-medialibrary-image-properties-form fieldset {
+    margin: 0;
+    border: none;
+    padding: 20px;
+}
+#slidedeck-medialibrary-image-properties-form label {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100px;
+}
+#slidedeck-medialibrary-image-properties-form input[type="text"],
+#slidedeck-medialibrary-image-properties-form input[type="email"] {
+    width: 234px;
+    color: #666;
+    font: normal 12px/29px sans-serif;
+    height: 29px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+#slidedeck-medialibrary-image-properties-form p.submit-row {
+    background: #fff;
+    border-top: 1px solid #d0d0d0;
+    margin: 0;
+    padding: 10px 20px;
+    text-align: right;
+}
+#slidedeck-medialibrary-image-properties-form p.submit-row a.close-modal { margin-right: 20px; }
+
+#slidedeck-content-source .fancy-select{
+    color: #333;
+}
+#slidedeck-content-source #options-flickr_userid{
+    min-width: 153px;
+}
+
+/* Flickr tags styles */
+#content-source-flickr em {
+    display: block;
+    line-height: normal;
+    margin-left: 140px;
+    max-width: 270px;
+}
+.content-source-fields .add-button-li a.flickr-tag-add{
+    line-height: 2em;
+}
+#slidedeck-content-source ul.content-source-fields #flickr-add-tag-field{
+    min-width: 157px;
+}
+.flickr.add-button-wrapper{
+    padding-bottom: 9px;
+}
+#flickr-tags-wrapper{
+    clear: both;
+    width: 230px;
+    padding-left: 142px;
+    overflow: hidden;
+}
+#flickr-tags-wrapper span {
+    background: none repeat scroll 0 0 #eee;
+    border-radius: 3px;
+    display: block;
+    color: #acacac;
+    border: solid 1px #cbcbcb;
+    height: 14px;
+    font-size: 12px;
+    line-height: 14px;
+    overflow: hidden;
+    float: left;
+    padding: 0 5px;
+    margin-right: 7px;
+    margin-bottom: 6px;
+}
+#flickr-tags-wrapper span .delete,
+#flickr-tags-wrapper span .delete:link
+#flickr-tags-wrapper span .delete:visited {
+    display: block;
+    margin-right: 4px;
+    width: 10px;
+    float: left;
+    height: 0;
+    position: relative;
+    top: 2px;
+    padding-top: 10px;
+    background: url('images/delete-x.png') no-repeat -25px -25px;
+    overflow: hidden;
+}
+#flickr-tags-wrapper span .delete:hover {
+    background-position: -25px -85px;
+}
+#flickr-tags-wrapper span .delete:active {
+    background-position: -25px -145px;
+}
+
+/* Media Library Flyout */
+#slidedeck-medialibrary-images {
+    background: url("../../images/linen.jpg") center top #1c1a1f;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+#content-source-medialibrary .inner span.label {
+    display: block;
+    float: left;
+    width: 182px;
+    line-height: 1.5em;
+    font-size: 13px;
+    font-weight: bold;
+}
+#slidedeck-content-source #content-source-medialibrary div.inner {
+    border-bottom: solid 1px #999;
+    -webkit-border-bottom-right-radius: 6px;
+    -webkit-border-bottom-left-radius: 6px;
+    -moz-border-radius-bottomright: 6px;
+    -moz-border-radius-bottomleft: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+#content-source-medialibrary .button{
+    position: relative;
+    top: 19px;
+}

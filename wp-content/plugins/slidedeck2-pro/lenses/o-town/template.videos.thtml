@@ -1,0 +1,26 @@
+<?php if( !empty( $meta['full_image'] ) ) { ?>
+<div class="slide-image" style='background-image: url("<?php echo $meta['full_image']; ?>"); display:none;'>&nbsp;</div>
+<?php }else{ ?>
+<div class="slide-image">&nbsp;</div>    
+<?php } ?>
+        <div class="video-wrapper">
+            <div id="video_<?php echo $id; ?>_<?php echo $slidedeck['id']; ?>-<?php echo $deck_iteration; ?>-<?php echo $slide_counter; ?>" class="<?php echo $service; ?> video-container"></div>
+            <div class="cover" style="background-image: url('<?php echo $meta['full_image']; ?>');">
+				<div class="slide-content">
+				    <div class="slide-content-inner">
+		                <h3 class="slide-title accent-color">
+		                    <?php if( $slidedeck['options']['linkTitle'] == true ): ?><a href="<?php echo $permalink; ?>" target="<?php echo $target; ?>" class="accent-color"><?php endif; ?>
+		                        <?php echo $title; ?>
+		                    <?php if( $slidedeck['options']['linkTitle'] == true ): ?></a><?php endif; ?>
+		                </h3>
+		                <div class="slide-meta">
+		                    <?php if( !empty( $author_avatar ) ): ?>
+		                        <img src="<?php echo $author_avatar; ?>" alt="<?php echo $author_name; ?>" class="slide-author-avatar" />
+		                    <?php endif; ?>
+		                </div>
+				    </div>
+				</div>
+                <a class="play-video-button play" href="#play">Click To Play</a>
+            </div>
+        </div>
+<span class="slidedeck-index-indicator"><span class="current">x</span>/<span class="total">x</span></span>

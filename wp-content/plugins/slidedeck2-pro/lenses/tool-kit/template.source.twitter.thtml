@@ -1,0 +1,13 @@
+<div class="sd-node-title-box">
+    
+    <div class="slidedeck-vertical-center-outer">
+        <div class="slidedeck-vertical-center-middle">
+            <div class="slidedeck-vertical-center-inner">
+                
+            	<div class="slide-title"><?php echo $excerpt; ?></div>
+            	
+            </div>
+        </div>
+    </div>
+    
+</div>

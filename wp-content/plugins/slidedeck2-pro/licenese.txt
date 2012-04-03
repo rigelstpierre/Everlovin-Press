@@ -1,0 +1,9 @@
+SlideDeck 2 Pro for WordPress
+Copyright (c) 2012 digital-telepathy (http://www.dtelepathy.com)
+
+BY USING THIS SOFTWARE, YOU AGREE TO THE TERMS OF THE SLIDEDECK 
+LICENSE AGREEMENT FOUND AT http://www.slidedeck.com/license. 
+IF YOU DO NOT AGREE TO THESE TERMS, DO NOT USE THE SOFTWARE.
+
+More information on this project:
+http://www.slidedeck.com/

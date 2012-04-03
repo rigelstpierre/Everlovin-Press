@@ -1,0 +1,716 @@
+@import url("normalize.css");
+@import url("form.css");
+@import url("jquery.twitter.css");
+/* @group Boilerplate Overrides
+----------------------------------------------- */
+a, a:active, a:visited {
+  color: #607890; }
+
+a:hover {
+  color: #036; }
+
+/* @end */
+h2 {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em; }
+
+h3 {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em; }
+
+h4 {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #212121;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  text-shadow: 1px 1px 1px #ffffff;
+  filter: dropshadow(color=white, offx=1, offy=1); }
+
+.btn, .btn:visited {
+  font-family: "futura-pt",sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  width: 240px;
+  height: 61px;
+  display: block;
+  background: url(../images/big-btn.png) 0 0 no-repeat;
+  text-decoration: none;
+  text-align: center;
+  padding: 30px 0 0 0; }
+  .btn:hover, .btn:visited:hover {
+    background: url(../images/big-btn.png) 0 -92px no-repeat;
+    color: #fff; }
+  .btn:active, .btn:visited:active {
+    background: url(../images/big-btn.png) 0 -182px no-repeat; }
+
+body {
+  background: white url(../images/speckle.jpg) repeat; }
+
+.container {
+  width: 960px;
+  margin: 0px auto; }
+
+header {
+  background: #fff;
+  height: 90px;
+  margin: 0 auto; }
+  header img {
+    margin: 20px 0 0 20px;
+    float: left; }
+  header nav {
+    float: right;
+    margin: 40px 0 0 0; }
+    header nav ul li {
+      display: inline;
+      margin: 0 70px 0 0; }
+      header nav ul li a, header nav ul li a:visited {
+        font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        color: #ff5e2e;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 0.3em; }
+        header nav ul li a:hover, header nav ul li a:visited:hover {
+          color: #000; }
+      header nav ul li a.active {
+        color: #000; }
+
+.slider {
+  height: 480px; }
+
+#main .see-work-top p {
+  font-family: "old-standard",serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  color: #144057;
+  line-height: 52px;
+  letter-spacing: 2px; }
+#main .see-work-top ul {
+  width: 960px;
+  height: 91px;
+  margin-bottom: 70px; }
+  #main .see-work-top ul li {
+    float: left;
+    list-style: none;
+    margin: 0 66px 0 0; }
+#main .featured-content {
+  width: 960px;
+  height: 480px;
+  border-top: 1px dotted; }
+  #main .featured-content .smallbox {
+    width: 480px;
+    height: 240px;
+    float: left;
+    z-index: 0;
+    display: block; }
+    #main .featured-content .smallbox img {
+      float: left; }
+  #main .featured-content .largebox {
+    width: 480px;
+    height: 240px;
+    float: left;
+    display: block;
+    text-decoration: none; }
+    #main .featured-content .largebox h2 {
+      font-size: 24px;
+      color: #fff;
+      padding: 60px 30px 0 30px; }
+  #main .featured-content .texture-1 {
+    width: 480px;
+    height: 240px;
+    float: left;
+    z-index: 1;
+    margin: 0 0 0 -480px;
+    text-decoration: none;
+    background: url(../images/textures/texture-1.png) no-repeat; }
+    #main .featured-content .texture-1:hover {
+      background: url(../images/textures/blue.png) no-repeat 240px 0; }
+    #main .featured-content .texture-1 h2 {
+      width: 240px;
+      float: right;
+      text-align: center;
+      color: #fff;
+      padding: 75px 0 0 0px; }
+  #main .featured-content .texture-2 {
+    width: 480px;
+    height: 240px;
+    float: left;
+    z-index: 1;
+    margin: 0 0 0 -480px;
+    text-decoration: none;
+    background: url(../images/textures/texture-2.png) no-repeat; }
+    #main .featured-content .texture-2:hover {
+      background: url(../images/textures/orange.png) no-repeat 240px 0; }
+    #main .featured-content .texture-2 h2 {
+      width: 240px;
+      float: right;
+      text-align: center;
+      color: #fff;
+      padding: 75px 0 0 0px; }
+  #main .featured-content .texture-3 {
+    width: 480px;
+    height: 240px;
+    float: left;
+    z-index: 1;
+    margin: 0 0 0 -480px;
+    text-decoration: none;
+    background: url(../images/textures/texture-3.png) no-repeat; }
+    #main .featured-content .texture-3:hover {
+      background: url(../images/textures/offwhite.png) no-repeat 240px 0; }
+    #main .featured-content .texture-3 h2 {
+      width: 240px;
+      float: right;
+      text-align: center;
+      color: #fff;
+      padding: 75px 0 0 0px;
+      color: #ff5e2e; }
+  #main .featured-content .blue {
+    background: #144057; }
+  #main .featured-content .orange {
+    background: #ff5e2e; }
+    #main .featured-content .orange:hover {
+      background: #ff6e43; }
+  #main .featured-content .white {
+    background: #fff; }
+#main .about {
+  font-family: "old-standard",serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  color: #144057;
+  line-height: 52px;
+  letter-spacing: 3px; }
+  #main .about h2 {
+    background: url(../images/about-title-line.png) no-repeat 0 20px; }
+  #main .about p {
+    margin: 0px; }
+#main .contact {
+  height: 39px;
+  background: url(../images/contact-bg.png) no-repeat;
+  margin: 40px 0 40px 0; }
+  #main .contact p {
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #144057;
+    line-height: 38px;
+    letter-spacing: 0.3em;
+    margin: 0 0 0 12px; }
+    #main .contact p strong {
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 700; }
+    #main .contact p a {
+      color: #ff5e2e;
+      text-decoration: none; }
+#main .social {
+  height: 405px; }
+  #main .social h2 {
+    background: url(../images/social-title-line.png) no-repeat 0 5px; }
+  #main .social .dribbble {
+    width: 430px;
+    height: 370px;
+    float: left;
+    background: url(../images/dribbble-bg.png) no-repeat;
+    margin: 35px 0 35px 45px; }
+  #main .social .twitter {
+    width: 430px;
+    height: 370px;
+    float: left;
+    background: url(../images/twitter-bg.png) no-repeat;
+    margin: 35px 0 35px 10px; }
+#main .furthermore {
+  clear: both;
+  padding: 20px 0 0 0; }
+  #main .furthermore h2 {
+    background: url(../images/furthermore-title-line.png) no-repeat 0 5px; }
+#main .meet-greet-welcome {
+  height: 480px;
+  background: #1a1a1a; }
+  #main .meet-greet-welcome div {
+    width: 336px;
+    margin: 0 auto;
+    padding-top: 60px; }
+  #main .meet-greet-welcome h2 {
+    font-size: 245px;
+    line-height: 1px;
+    padding: 125px 0 0 0;
+    margin: 0;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 5px 5px 2px #ff5e2e;
+    letter-spacing: normal; }
+#main .reach-us {
+  letter-spacing: 3px; }
+  #main .reach-us h2 {
+    background: url(../images/reachus-title-line.png) no-repeat 0 5px; }
+  #main .reach-us p {
+    margin: 0px; }
+  #main .reach-us div {
+    float: left;
+    margin: 60px 0; }
+    #main .reach-us div p {
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 12px;
+      line-height: 26px; }
+      #main .reach-us div p span {
+        margin: 0 0 0 30px;
+        font-size: 24px;
+        font-family: "old-standard",serif;
+        font-style: normal;
+        font-weight: 700;
+        color: #144057;
+        text-transform: none; }
+  #main .reach-us ul {
+    float: left;
+    margin: 60px 0 60px 60px; }
+    #main .reach-us ul li {
+      list-style: none;
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 0;
+      margin: 0; }
+      #main .reach-us ul li a {
+        color: #ff5e2e;
+        font-family: "old-standard",serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        text-transform: none;
+        text-decoration: none;
+        margin: 0 0 0 30px; }
+        #main .reach-us ul li a:hover {
+          text-decoration: underline; }
+#main .meet-the-press-man {
+  clear: both;
+  letter-spacing: 3px; }
+  #main .meet-the-press-man h2 {
+    background: url(../images/reachus-title-line.png) no-repeat 0 5px; }
+  #main .meet-the-press-man div {
+    width: 790px;
+    height: 440px;
+    margin: 0 auto;
+    border: 1px solid #000;
+    margin-top: 50px;
+    background: #000; }
+    #main .meet-the-press-man div img {
+      float: left; }
+    #main .meet-the-press-man div aside {
+      width: 331px;
+      float: left;
+      margin: 50px 0 0 30px; }
+      #main .meet-the-press-man div aside h3 {
+        text-align: left; }
+      #main .meet-the-press-man div aside h4 {
+        text-align: left;
+        color: #ff5e2e;
+        text-shadow: none;
+        font-size: 10px; }
+      #main .meet-the-press-man div aside p {
+        font-family: "old-standard",serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #fff; }
+#main .peek {
+  clear: both;
+  height: 1000px;
+  margin: 50px 0 0 0; }
+  #main .peek h2 {
+    background: url(../images/peek-title-line.png) no-repeat 0 5px; }
+  #main .peek img {
+    float: left; }
+#main .friends {
+  clear: both;
+  margin: 50px 0 75px 0;
+  width: 960px;
+  height: 250px; }
+  #main .friends h2 {
+    background: url(../images/our-friends.png) no-repeat 0 5px; }
+  #main .friends ul {
+    padding: 0;
+    font-family: "old-standard",serif;
+    font-style: normal;
+    font-weight: 400;
+    width: 890px;
+    margin: 0 auto;
+    margin-top: 25px; }
+    #main .friends ul li {
+      float: left;
+      list-style: none;
+      font-size: 21px;
+      margin: 0 0 30px 30px;
+      width: 250px;
+      text-align: center; }
+      #main .friends ul li a, #main .friends ul li a:visited {
+        text-decoration: none; }
+        #main .friends ul li a:hover, #main .friends ul li a:visited:hover {
+          text-decoration: underline; }
+#main .hirethepressman p:first-child {
+  font-family: "old-standard",serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #144057;
+  font-size: 34px; }
+#main .hirethepressman .services {
+  width: 960px;
+  height: 690px; }
+  #main .hirethepressman .services h2 {
+    background: url(../images/services-title-line.png) no-repeat 0 5px; }
+  #main .hirethepressman .services a {
+    text-decoration: none; }
+  #main .hirethepressman .services div {
+    width: 390px;
+    height: 310px;
+    float: left;
+    margin: 0 10px 10px 0; }
+    #main .hirethepressman .services div h3 {
+      font-size: 40px;
+      letter-spacing: 0; }
+  #main .hirethepressman .services .blue {
+    background: #144057;
+    margin-top: 50px;
+    margin-left: 85px; }
+    #main .hirethepressman .services .blue h3 {
+      margin-top: 100px; }
+    #main .hirethepressman .services .blue:hover {
+      background: #426577; }
+  #main .hirethepressman .services .orange {
+    margin-top: 50px;
+    background: #ff5e2e; }
+    #main .hirethepressman .services .orange h3 {
+      margin-top: 80px; }
+    #main .hirethepressman .services .orange:hover {
+      background: #ff6e43; }
+  #main .hirethepressman .services .white {
+    border: 1px solid #d0d0d0;
+    background: #fff;
+    margin-left: 85px;
+    width: 389px; }
+    #main .hirethepressman .services .white h3 {
+      margin-top: 100px;
+      color: #144057; }
+    #main .hirethepressman .services .white:hover {
+      background: #eceff1; }
+  #main .hirethepressman .services .black {
+    background: #1f1f1f; }
+    #main .hirethepressman .services .black h3 {
+      margin-top: 80px; }
+    #main .hirethepressman .services .black:hover {
+      background: #363636; }
+#main .hirethepressman .products-services {
+  clear: both;
+  width: 960px;
+  height: 315px;
+  margin: 50px 0 0 0; }
+  #main .hirethepressman .products-services h2 {
+    background: url(../images/products-title-line.png) no-repeat 0 5px; }
+  #main .hirethepressman .products-services ul {
+    width: 260px;
+    height: 200px;
+    padding: 0;
+    margin: 50px 0 0 45px;
+    float: left; }
+    #main .hirethepressman .products-services ul li {
+      list-style: none;
+      color: #144057;
+      margin: 0 0 30px 0;
+      font-size: 21px;
+      text-align: center;
+      font-family: "old-standard",serif;
+      font-style: normal;
+      font-weight: 400; }
+#main .hirethepressman .unusual {
+  clear: both;
+  width: 960px;
+  padding: 50px 0 50px 0; }
+  #main .hirethepressman .unusual h2 {
+    background: url(../images/unusual-title-line.png) no-repeat 0 5px; }
+  #main .hirethepressman .unusual p {
+    font-size: 21px;
+    color: #144057;
+    font-family: "old-standard",serif;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0 125px; }
+#main nav.services {
+  width: 890px;
+  height: 50px;
+  margin: 0 0 50px 40px;
+  padding-top: 50px; }
+  #main nav.services ul li {
+    float: left;
+    margin: 0 30px 0 0; }
+  #main nav.services ul .custom a, #main nav.services ul a:visited {
+    display: block;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 12px 0 0 0;
+    text-decoration: none;
+    width: 193px;
+    height: 34px;
+    background: url(../images/custom.png) no-repeat 0 0; }
+    #main nav.services ul .custom a:hover, #main nav.services ul a:visited:hover {
+      background: url(../images/custom.png) no-repeat 0 -47px; }
+    #main nav.services ul .custom a:active, #main nav.services ul a:visited:active {
+      background: url(../images/custom.png) no-repeat 0 -95px; }
+  #main nav.services ul .pricing a, #main nav.services ul a:visited {
+    display: block;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 12px 0 0 0;
+    text-decoration: none;
+    width: 179px;
+    height: 34px;
+    background: url(../images/pricing.png) no-repeat 0 0; }
+    #main nav.services ul .pricing a:hover, #main nav.services ul a:visited:hover {
+      background: url(../images/pricing.png) no-repeat 0 -47px; }
+    #main nav.services ul .pricing a:active, #main nav.services ul a:visited:active {
+      background: url(../images/pricing.png) no-repeat 0 -95px; }
+  #main nav.services ul .process a, #main nav.services ul a:visited {
+    display: block;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 12px 0 0 0;
+    text-decoration: none;
+    width: 245px;
+    height: 34px;
+    background: url(../images/process.png) no-repeat 0 0; }
+    #main nav.services ul .process a:hover, #main nav.services ul a:visited:hover {
+      background: url(../images/process.png) no-repeat 0 -47px; }
+    #main nav.services ul .process a:active, #main nav.services ul a:visited:active {
+      background: url(../images/process.png) no-repeat 0 -94px; }
+  #main nav.services ul .wholesale a, #main nav.services ul a:visited {
+    display: block;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 12px 0 0 0;
+    text-decoration: none;
+    width: 143px;
+    height: 34px;
+    background: url(../images/wholesale.png) no-repeat 0 0; }
+    #main nav.services ul .wholesale a:hover, #main nav.services ul a:visited:hover {
+      background: url(../images/wholesale.png) no-repeat 0 -48px; }
+    #main nav.services ul .wholesale a:active, #main nav.services ul a:visited:active {
+      background: url(../images/wholesale.png) no-repeat 0 -95px; }
+#main .capabilities {
+  background: #000;
+  padding: 0 0 100px 0; }
+  #main .capabilities .what-we-do {
+    clear: both;
+    width: 790px;
+    margin: 50px 0 0 0;
+    margin: 0 auto;
+    background: #fff; }
+    #main .capabilities .what-we-do h3 {
+      font-size: 36px;
+      text-align: center;
+      color: #262626;
+      letter-spacing: 0.2em;
+      text-shadow: 2px 1px 1px #ff5e2e;
+      padding: 50px 0 50px 0; }
+    #main .capabilities .what-we-do h2 {
+      background: url(../images/process-title-line.png) no-repeat 75px 0px; }
+    #main .capabilities .what-we-do p {
+      font-size: 21px;
+      color: #144057;
+      font-family: "old-standard",serif;
+      font-style: normal;
+      font-weight: 400;
+      padding: 50px 80px 50px 80px; }
+    #main .capabilities .what-we-do img {
+      margin: 0 0 0 80px; }
+    #main .capabilities .what-we-do .capabilities-list {
+      padding: 0 0 50px 0; }
+      #main .capabilities .what-we-do .capabilities-list h4 {
+        color: #ff5e2e;
+        text-align: left;
+        padding: 0 50px;
+        margin: 0;
+        letter-spacing: 0.2em; }
+      #main .capabilities .what-we-do .capabilities-list p {
+        padding: 0 50px;
+        margin: 0; }
+#main .custom-quotes {
+  background: url(../images/lines-bg.jpg) repeat;
+  padding: 0 0 100px 0; }
+  #main .custom-quotes .quote-form {
+    clear: both;
+    width: 790px;
+    margin: 25px 0 0 0;
+    margin: 0 auto;
+    background: #144057; }
+    #main .custom-quotes .quote-form h3 {
+      font-size: 36px;
+      text-align: center;
+      color: #fff;
+      letter-spacing: 0.2em;
+      text-shadow: 2px 1px 1px #ff5e2e;
+      padding: 50px 0 50px 0; }
+    #main .custom-quotes .quote-form h4 {
+      clear: both;
+      text-align: left;
+      color: #fff;
+      text-shadow: none; }
+    #main .custom-quotes .quote-form form {
+      width: 718px;
+      padding: 0 0 40px 0;
+      margin: 0 0 0 30px; }
+      #main .custom-quotes .quote-form form .radio {
+        height: 25px;
+        width: 19px;
+        float: left;
+        margin: 0 0 3px;
+        padding: 0 0 0 26px;
+        background: url("radio.png");
+        background-repeat: no-repeat;
+        cursor: default; }
+      #main .custom-quotes .quote-form form label {
+        font-family: "old-standard",serif;
+        font-style: normal;
+        font-weight: 400;
+        color: #fff;
+        font-size: 21px;
+        float: left;
+        padding: 0 55px 60px 10px; }
+      #main .custom-quotes .quote-form form input[type="text"], #main .custom-quotes .quote-form form input[type="email"] {
+        width: 270px;
+        font-family: "old-standard",serif;
+        font-style: normal;
+        font-weight: 400;
+        border-radius: 0;
+        margin: 5px 0 0 0; }
+      #main .custom-quotes .quote-form form textarea {
+        width: 510px;
+        height: 240px; }
+
+footer {
+  clear: both;
+  height: 215px;
+  background: #ff5e2e; }
+  footer .newsletter {
+    width: 370px;
+    height: 120px;
+    float: left;
+    margin: 25px 0 0 40px; }
+    footer .newsletter form {
+      height: 37px; }
+    footer .newsletter input[type=email] {
+      border: none;
+      width: 240px;
+      height: 20px;
+      border-radius: 0px;
+      font-family: "old-standard",serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #cccccc;
+      font-size: 14px;
+      float: left; }
+    footer .newsletter input[type=submit] {
+      float: left;
+      border: none;
+      width: 95px;
+      height: 37px;
+      background: url(../images/signup-btn.png) no-repeat;
+      margin: 0 0 0 13px;
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.3em; }
+    footer .newsletter p {
+      font-family: "old-standard",serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #fff;
+      text-transform: none;
+      font-size: 14px;
+      letter-spacing: normal; }
+  footer .lastword {
+    width: 370px;
+    height: 110px;
+    float: right;
+    margin: 25px 40px 0 0; }
+    footer .lastword p {
+      color: #fff;
+      font-size: 40px;
+      text-align: center;
+      margin: 0;
+      letter-spacing: 0.1em;
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      text-transform: uppercase; }
+  footer span p {
+    clear: both;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #000;
+    letter-spacing: 0.3em;
+    padding-top: 40px; }
+
+/* @group Classes
+----------------------------------------------- */
+img.alignright {
+  margin: 0 0 2px 10px;
+  display: inline;
+  border: 3px solid #376092; }
+
+img.alignleft {
+  margin: 0 10px 2px 0;
+  display: inline;
+  border: 3px solid #376092; }
+
+/* @end */
