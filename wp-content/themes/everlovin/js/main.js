@@ -12,8 +12,8 @@ jQuery(document).ready(function($) {
     $.jribbble.getShotsByPlayerId('tomfroese', function (playerShots) {
         var html = [];
         $.each(playerShots.shots, function (i, shot) {
-            html.push('<img src="' + shot.image_url + '" ');
-            html.push('alt="' + shot.title + '"></a></li>');
+            html.push('<a href="' + shot.url + '"><img src="' + shot.image_url + '" ');
+            html.push('alt="' + shot.title + '"></a>');
         });
             
         $('#dribbble').html(html.join(''));
