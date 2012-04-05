@@ -590,7 +590,7 @@ header {
 			}
 		}
 	}
-	nav.services {
+	nav#services {
 		width: 890px;
 		height: 50px;
 		margin: 0 0 50px 40px;
@@ -701,7 +701,7 @@ header {
 				padding: 50px 80px 50px 80px;
 			}
 			img {
-				margin: 0 0 0 80px;
+				padding: 50px 0 50px 0;
 			}
 			.capabilities-list {
 				padding: 0 0 50px 0;

@@ -88,6 +88,7 @@ function wpi_stylesheet_uri($stylesheet_uri, $stylesheet_dir_uri){
 function lps_register_menus() {
 	register_nav_menus(array('primary'=>__('Primary Nav'),));
 	register_nav_menus(array('work'=>__('Work Nav'),));
+	register_nav_menus(array('hire'=>__('Hire The Press Man Nav'),));
 }
 
 function lps_register_sidebars() {

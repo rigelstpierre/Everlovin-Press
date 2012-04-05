@@ -493,15 +493,15 @@ header {
     font-style: normal;
     font-weight: 400;
     padding: 0 125px; }
-#main nav.services {
+#main nav#services {
   width: 890px;
   height: 50px;
   margin: 0 0 50px 40px;
   padding-top: 50px; }
-  #main nav.services ul li {
+  #main nav#services ul li {
     float: left;
     margin: 0 30px 0 0; }
-  #main nav.services ul .custom a, #main nav.services ul a:visited {
+  #main nav#services ul .custom a, #main nav#services ul a:visited {
     display: block;
     font-family: "futura-pt",sans-serif;
     font-style: normal;
@@ -514,11 +514,11 @@ header {
     width: 193px;
     height: 34px;
     background: url(../images/custom.png) no-repeat 0 0; }
-    #main nav.services ul .custom a:hover, #main nav.services ul a:visited:hover {
+    #main nav#services ul .custom a:hover, #main nav#services ul a:visited:hover {
       background: url(../images/custom.png) no-repeat 0 -47px; }
-    #main nav.services ul .custom a:active, #main nav.services ul a:visited:active {
+    #main nav#services ul .custom a:active, #main nav#services ul a:visited:active {
       background: url(../images/custom.png) no-repeat 0 -95px; }
-  #main nav.services ul .pricing a, #main nav.services ul a:visited {
+  #main nav#services ul .pricing a, #main nav#services ul a:visited {
     display: block;
     font-family: "futura-pt",sans-serif;
     font-style: normal;
@@ -531,11 +531,11 @@ header {
     width: 179px;
     height: 34px;
     background: url(../images/pricing.png) no-repeat 0 0; }
-    #main nav.services ul .pricing a:hover, #main nav.services ul a:visited:hover {
+    #main nav#services ul .pricing a:hover, #main nav#services ul a:visited:hover {
       background: url(../images/pricing.png) no-repeat 0 -47px; }
-    #main nav.services ul .pricing a:active, #main nav.services ul a:visited:active {
+    #main nav#services ul .pricing a:active, #main nav#services ul a:visited:active {
       background: url(../images/pricing.png) no-repeat 0 -95px; }
-  #main nav.services ul .process a, #main nav.services ul a:visited {
+  #main nav#services ul .process a, #main nav#services ul a:visited {
     display: block;
     font-family: "futura-pt",sans-serif;
     font-style: normal;
@@ -548,11 +548,11 @@ header {
     width: 245px;
     height: 34px;
     background: url(../images/process.png) no-repeat 0 0; }
-    #main nav.services ul .process a:hover, #main nav.services ul a:visited:hover {
+    #main nav#services ul .process a:hover, #main nav#services ul a:visited:hover {
       background: url(../images/process.png) no-repeat 0 -47px; }
-    #main nav.services ul .process a:active, #main nav.services ul a:visited:active {
+    #main nav#services ul .process a:active, #main nav#services ul a:visited:active {
       background: url(../images/process.png) no-repeat 0 -94px; }
-  #main nav.services ul .wholesale a, #main nav.services ul a:visited {
+  #main nav#services ul .wholesale a, #main nav#services ul a:visited {
     display: block;
     font-family: "futura-pt",sans-serif;
     font-style: normal;
@@ -565,9 +565,9 @@ header {
     width: 143px;
     height: 34px;
     background: url(../images/wholesale.png) no-repeat 0 0; }
-    #main nav.services ul .wholesale a:hover, #main nav.services ul a:visited:hover {
+    #main nav#services ul .wholesale a:hover, #main nav#services ul a:visited:hover {
       background: url(../images/wholesale.png) no-repeat 0 -48px; }
-    #main nav.services ul .wholesale a:active, #main nav.services ul a:visited:active {
+    #main nav#services ul .wholesale a:active, #main nav#services ul a:visited:active {
       background: url(../images/wholesale.png) no-repeat 0 -95px; }
 #main .capabilities {
   background: #000;
@@ -595,7 +595,7 @@ header {
       font-weight: 400;
       padding: 50px 80px 50px 80px; }
     #main .capabilities .what-we-do img {
-      margin: 0 0 0 80px; }
+      padding: 50px 0 50px 0; }
     #main .capabilities .what-we-do .capabilities-list {
       padding: 0 0 50px 0; }
       #main .capabilities .what-we-do .capabilities-list h4 {
