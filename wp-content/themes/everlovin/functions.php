@@ -51,7 +51,7 @@ function work_posttype() {
 			),
 			'public' => true,
 			'menu_position' => 5,
-			'supports' => array( 'title', 'editor'),
+			'supports' => array( 'title', 'editor', 'thumbnail' ),
 		)
 	);
 }

@@ -12,23 +12,34 @@ Template Name: Home
 	<div id="main">
 		<div class="container">
 			<section class="featured-content">
-				<div class="smallbox blue">
-					<img src="<?php bloginfo('template_directory'); ?>/images/featured-content/ken-jan.jpg" alt="" />
-				</div>
-				<a class="texture-1" href="#"><h2>amanda &amp; tom’s wedding invitations</h2></a>
-
-				<div class="smallbox orange">
-					<img src="<?php bloginfo('template_directory'); ?>/images/featured-content/everlovin.jpg" alt="" />
-				</div>
-				<a class="texture-2" href="#"><h2>Everlovin’ gets a new identity</h2></a>
+				<?php $the_query = new WP_Query( array('post_type' => array('work'),'showposts' => '1' ));
+		          while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		        	<div class="smallbox blue">
+						<? the_post_thumbnail(); ?>
+					</div>
+					<a class="texture-1" href="<? the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+		        <?php endwhile; wp_reset_postdata(); ?>
 				
-				<a class="largebox orange" href="#"><h2>Everlovin’ gets a new identity</h2></a>
-
-				<div class="smallbox white">
-					<img src="<?php bloginfo('template_directory'); ?>/images/featured-content/exavier.jpg" alt="" />
-				</div>
-				<a class="texture-3" href="#"><h2>Xavier &amp; phillpe wedding invitations</h2></a>
+				<?php $the_query = new WP_Query( array('post_type' => array('work'),'showposts' => '1' ));
+		          while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		            <div class="smallbox orange">
+						<?php the_post_thumbnail(); ?>
+					</div>
+					<a class="texture-2" href="<? the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+		        <?php endwhile; wp_reset_postdata(); ?>
 				
+				<?php $the_query = new WP_Query( array('post_type' => array('work'),'showposts' => '1' ));
+		          while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		            <a class="largebox orange" href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+		        <?php endwhile; wp_reset_postdata(); ?>
+		       
+		        <?php $the_query = new WP_Query( array('post_type' => array('work'),'showposts' => '1' ));
+		          while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+		            <div class="smallbox white" >
+						<? the_post_thumbnail(); ?>
+					</div>
+					<a class="texture-3" href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+		        <?php endwhile; wp_reset_postdata(); ?>
 			</section>
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 			<section class="about">
