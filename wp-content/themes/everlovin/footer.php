@@ -16,8 +16,7 @@
 		</div>
 	</footer>
 	
-	<script src="javascripts/plugins.js"></script>
-	<script src="javascripts/script.js"></script>
+	<script type="text/javascript" src="//assets.pinterest.com/js/pinit.js"></script>
 	
 	<!--[if lt IE 7 ]>
 		<script src="/javascripts/libs/dd_belatedpng.js"></script>

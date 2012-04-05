@@ -659,6 +659,78 @@ header {
       #main .custom-quotes .quote-form form textarea {
         width: 510px;
         height: 240px; }
+#main .single {
+  min-height: 1300px;
+  border-bottom: 1px solid #000;
+  margin-bottom: 20px; }
+  #main .single img {
+    margin-bottom: 10px;
+    float: left; }
+  #main .single aside {
+    min-height: 1300px;
+    float: right;
+    width: 266px;
+    border-left: 1px solid #000; }
+    #main .single aside h3 {
+      font-family: "old-standard",serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 36px;
+      color: #144057;
+      text-align: left;
+      text-transform: none;
+      letter-spacing: 0.1em;
+      padding-left: 35px; }
+    #main .single aside h2 {
+      background: url(../images/lowdown-title-line.png) no-repeat 20px -2px;
+      font-size: 10px;
+      color: #212121;
+      margin-left: 15px;
+      padding-left: 25px; }
+    #main .single aside p {
+      color: #144057;
+      font-family: "old-standard",serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 22px;
+      padding-left: 30px; }
+    #main .single aside #tweet-button {
+      display: block;
+      float: left;
+      width: 59px;
+      height: 25px;
+      margin-top: 10px;
+      margin-left: 60px;
+      background: url(../images/tweet.png) no-repeat 0 0; }
+      #main .single aside #tweet-button:hover {
+        background: url(../images/tweet.png) no-repeat 0 -26px; }
+      #main .single aside #tweet-button:active {
+        background: url(../images/tweet.png) no-repeat 0 -51px; }
+    #main .single aside #facebook-button {
+      display: block;
+      float: left;
+      width: 51px;
+      height: 25px;
+      margin-top: 10px;
+      margin-left: 5px;
+      background: url(../images/facebook.png) no-repeat 0 0; }
+      #main .single aside #facebook-button:hover {
+        background: url(../images/facebook.png) no-repeat 0 -26px; }
+      #main .single aside #facebook-button:active {
+        background: url(../images/facebook.png) no-repeat 0 -51px; }
+    #main .single aside .pin-it-button {
+      display: block;
+      float: left;
+      width: 45px;
+      height: 25px;
+      margin-top: 10px;
+      margin-left: 5px;
+      background: url(../images/pin.png) no-repeat 0 0; }
+      #main .single aside .pin-it-button:hover {
+        background: url(../images/pin.png) no-repeat 0 -26px; }
+      #main .single aside .pin-it-button:active {
+        background: url(../images/pin.png) no-repeat 0 -51px; }
 
 footer {
   clear: both;
