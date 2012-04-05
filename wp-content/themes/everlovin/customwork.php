@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: See The Work
+Template Name: Custom Work
 */
 ?>
 <?php get_header(); ?>

@@ -1,7 +1,8 @@
 <?php
 add_action( 'after_setup_theme', 'lps_theme_setup' );
 add_action( 'wp_print_scripts', 'lps_load_scripts' );
-add_action( 'init', 'work_posttype' );
+add_action( 'init', 'customwork_posttype' );
+add_action( 'init', 'readymade_posttype' );
 add_filter('body_class','expand_body_classes'); // Adds page slug to the body class
 
 // Includes
@@ -32,25 +33,49 @@ function lps_theme_setup() {
 	//add_image_size( 'name', width, hight, crop);
 }
 
-function work_posttype() {
-	register_post_type( 'work',
+function customwork_posttype() {
+	register_post_type( 'customwork',
 		array(
 			'labels' => array(
-			'name' => __( 'Work' ),
-			'singular_name' => __( 'Work' ),
+			'name' => __( 'Custom Work' ),
+			'singular_name' => __( 'Custom Work' ),
 			'add_new' => __( 'Add New' ),
-			'add_new_item' => __( 'Add New Work' ),
+			'add_new_item' => __( 'Add New Custom Work' ),
 			'edit' => __( 'Edit' ),
-			'edit_item' => __( 'Edit Work' ),
-			'new_item' => __( 'New Work' ),
-			'view' => __( 'View Work' ),
-			'view_item' => __( 'View Work' ),
-			'search_items' => __( 'Search Work' ),
-			'not_found' => __( 'No Work found' ),
-			'not_found_in_trash' => __( 'No Work found in Trash' ),
+			'edit_item' => __( 'Edit Custom Work' ),
+			'new_item' => __( 'New Custom Work' ),
+			'view' => __( 'View Custom Work' ),
+			'view_item' => __( 'View Custom Work' ),
+			'search_items' => __( 'Search Custom Work' ),
+			'not_found' => __( 'No Custom Work found' ),
+			'not_found_in_trash' => __( 'No Custom Work found in Trash' ),
 			),
 			'public' => true,
-			'menu_position' => 5,
+			'menu_position' => 4,
+			'supports' => array( 'title', 'editor', 'thumbnail' ),
+		)
+	);
+}
+
+function readymade_posttype() {
+	register_post_type( 'readymade',
+		array(
+			'labels' => array(
+			'name' => __( 'Readymades' ),
+			'singular_name' => __( 'Readymade' ),
+			'add_new' => __( 'Add New' ),
+			'add_new_item' => __( 'Add New Readymades' ),
+			'edit' => __( 'Edit' ),
+			'edit_item' => __( 'Edit Readymade' ),
+			'new_item' => __( 'New Readymade' ),
+			'view' => __( 'View Readymade' ),
+			'view_item' => __( 'View Readymade' ),
+			'search_items' => __( 'Search Readymades' ),
+			'not_found' => __( 'No Readymades found' ),
+			'not_found_in_trash' => __( 'No Readymades found in Trash' ),
+			),
+			'public' => true,
+			'menu_position' => 4,
 			'supports' => array( 'title', 'editor', 'thumbnail' ),
 		)
 	);

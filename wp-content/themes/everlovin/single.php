@@ -1,26 +1,34 @@
 <?php get_header(); ?>
+	<div id="main">
+			<div class="container">
+				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+				<section class="see-work-top">
+					<p><?php the_content(); ?></p>
+					<?php
+						wp_nav_menu( array( 'container' => 'nav', 'container_id' => 'work', 'theme_location' => 'work' ) );
+					?>
+				</section>
+				<?php endwhile; endif; ?>
+				<section class="featured-content">
+					<div class="smallbox blue">
+						<img src="<?php bloginfo('template_directory'); ?>/images/featured-content/ken-jan.jpg" alt="" />
+					</div>
+					<a class="texture-1" href="#"><h2>amanda &amp; tom’s wedding invitations</h2></a>
 
-	<section id="main">
-		<section id="main_content">
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<header>
-						<h2><?php the_title(); ?></h2>
-						<?php post_meta(); ?>
-					</header>
-					<div class="content"><?php the_content();?></div>
-														
-					<nav class="post-navigation">
-						<div class="navigation-previous"><?php previous_post_link('&laquo; %link') ?></div>
-						<div class="navigation-next"><?php next_post_link('%link &raquo;') ?></div>
-					</nav>
-				</article>
+					<div class="smallbox white">
+						<img src="<?php bloginfo('template_directory'); ?>/images/featured-content/everlovin.jpg" alt="" />
+					</div>
+					<a class="texture-3" href="#"><h2>Everlovin’ gets a new identity</h2></a>
+					
+					<a class="largebox orange" href="#"><h2>Everlovin’ gets a new identity</h2></a>
 
-	  			<?php comments_template(); ?>
-	
-	  		<?php endwhile; endif; ?>
-		</section><!--  #main_content-->		
-
-<?php get_sidebar(); ?>
+					<div class="smallbox white">
+						<img src="<?php bloginfo('template_directory'); ?>/images/featured-content/exavier.jpg" alt="" />
+					</div>
+					<a class="texture-3" href="#"><h2>Xavier &amp; phillpe wedding invitations</h2></a>
+				</section>
+				
+			</div><!-- end container -->
+		</div><!-- end main -->
 <?php get_footer(); ?>
 

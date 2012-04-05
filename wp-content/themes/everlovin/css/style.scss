@@ -104,6 +104,12 @@ h4 {
 		display: block;
 	}
 }
+#work {
+	li.current-menu-item {
+		background: url(../images/big-btn.png) 0 -92px no-repeat;
+		color: #fff;
+	}
+}
 
 body {
 	background: #fff url(../images/speckle.jpg) repeat;
@@ -176,7 +182,14 @@ header {
 		width: 960px;
 		height: 480px;
 		border-top: 1px dotted;
-		.smallbox {
+	}
+	.work {
+		clear: both;
+		width: 960px;
+		min-height: 480px;
+		padding-bottom: 50px;
+	}
+	.smallbox {
 			width: 480px;
 			height: 240px;
 			float: left;
@@ -184,63 +197,62 @@ header {
 			display: block;
 			img {
 				float: left;
-			}
 		}
-		.largebox {
-			width: 480px;
-			height: 240px;
-			float: left;
-			display: block;
-			text-decoration: none;
-			h2 {
-				font-size: 24px;
-				color: #fff;
-				padding: 60px 30px 0 30px;
-			}
+	}
+	.largebox {
+		width: 480px;
+		height: 240px;
+		float: left;
+		display: block;
+		text-decoration: none;
+		h2 {
+			font-size: 24px;
+			color: #fff;
+			padding: 60px 30px 0 30px;
 		}
-		.texture-1 {
-			@include textures;
-			background: url(../images/textures/texture-1.png) no-repeat;
-			&:hover {
-				background:  url(../images/textures/blue.png) no-repeat 240px 0;
-			}
-			h2 {
-				@include texture-h2;	
-			}
+	}
+	.texture-1 {
+		@include textures;
+		background: url(../images/textures/texture-1.png) no-repeat;
+		&:hover {
+			background:  url(../images/textures/blue.png) no-repeat 240px 0;
 		}
-		.texture-2 {
-			@include textures;
-			background: url(../images/textures/texture-2.png) no-repeat;
-			&:hover {
-				background:  url(../images/textures/orange.png) no-repeat 240px 0;
-			}
-			h2 {
-				@include texture-h2;	
-			}
+		h2 {
+			@include texture-h2;	
 		}
-		.texture-3 {
-			@include textures;
-			background: url(../images/textures/texture-3.png) no-repeat;
-			&:hover {
-				background:  url(../images/textures/offwhite.png) no-repeat 240px 0;
-			}
-			h2 {
-				@include texture-h2;
-				color: $orange;	
-			}
+	}
+	.texture-2 {
+		@include textures;
+		background: url(../images/textures/texture-2.png) no-repeat;
+		&:hover {
+			background:  url(../images/textures/orange.png) no-repeat 240px 0;
 		}
-		.blue {
-			background: $darkblue;
+		h2 {
+			@include texture-h2;	
 		}
-		.orange {
-			background: $orange;
-			&:hover {
-				background: $light-orange;
-			}
+	}
+	.texture-3 {
+		@include textures;
+		background: url(../images/textures/texture-3.png) no-repeat;
+		&:hover {
+			background:  url(../images/textures/offwhite.png) no-repeat 240px 0;
 		}
-		.white {
-			background: #fff;
+		h2 {
+			@include texture-h2;
+			color: $orange;	
 		}
+	}
+	.blue {
+		background: $darkblue;
+	}
+	.orange {
+		background: $orange;
+		&:hover {
+			background: $light-orange;
+		}
+	}
+	.white {
+		background: #fff;
 	}
 	.about {
 		@include old-regular;

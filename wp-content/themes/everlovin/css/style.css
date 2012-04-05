@@ -63,6 +63,10 @@ h4 {
     color: #fff;
     display: block; }
 
+#work li.current-menu-item {
+  background: url(../images/big-btn.png) 0 -92px no-repeat;
+  color: #fff; }
+
 body {
   background: white url(../images/speckle.jpg) repeat; }
 
@@ -120,81 +124,86 @@ header {
   width: 960px;
   height: 480px;
   border-top: 1px dotted; }
-  #main .featured-content .smallbox {
-    width: 480px;
-    height: 240px;
-    float: left;
-    z-index: 0;
-    display: block; }
-    #main .featured-content .smallbox img {
-      float: left; }
-  #main .featured-content .largebox {
-    width: 480px;
-    height: 240px;
-    float: left;
-    display: block;
-    text-decoration: none; }
-    #main .featured-content .largebox h2 {
-      font-size: 24px;
-      color: #fff;
-      padding: 60px 30px 0 30px; }
-  #main .featured-content .texture-1 {
-    width: 480px;
-    height: 240px;
-    float: left;
-    z-index: 1;
-    margin: 0 0 0 -480px;
-    text-decoration: none;
-    background: url(../images/textures/texture-1.png) no-repeat; }
-    #main .featured-content .texture-1:hover {
-      background: url(../images/textures/blue.png) no-repeat 240px 0; }
-    #main .featured-content .texture-1 h2 {
-      width: 240px;
-      float: right;
-      text-align: center;
-      color: #fff;
-      padding: 75px 0 0 0px; }
-  #main .featured-content .texture-2 {
-    width: 480px;
-    height: 240px;
-    float: left;
-    z-index: 1;
-    margin: 0 0 0 -480px;
-    text-decoration: none;
-    background: url(../images/textures/texture-2.png) no-repeat; }
-    #main .featured-content .texture-2:hover {
-      background: url(../images/textures/orange.png) no-repeat 240px 0; }
-    #main .featured-content .texture-2 h2 {
-      width: 240px;
-      float: right;
-      text-align: center;
-      color: #fff;
-      padding: 75px 0 0 0px; }
-  #main .featured-content .texture-3 {
-    width: 480px;
-    height: 240px;
-    float: left;
-    z-index: 1;
-    margin: 0 0 0 -480px;
-    text-decoration: none;
-    background: url(../images/textures/texture-3.png) no-repeat; }
-    #main .featured-content .texture-3:hover {
-      background: url(../images/textures/offwhite.png) no-repeat 240px 0; }
-    #main .featured-content .texture-3 h2 {
-      width: 240px;
-      float: right;
-      text-align: center;
-      color: #fff;
-      padding: 75px 0 0 0px;
-      color: #ff5e2e; }
-  #main .featured-content .blue {
-    background: #144057; }
-  #main .featured-content .orange {
-    background: #ff5e2e; }
-    #main .featured-content .orange:hover {
-      background: #ff6e43; }
-  #main .featured-content .white {
-    background: #fff; }
+#main .work {
+  clear: both;
+  width: 960px;
+  min-height: 480px;
+  padding-bottom: 50px; }
+#main .smallbox {
+  width: 480px;
+  height: 240px;
+  float: left;
+  z-index: 0;
+  display: block; }
+  #main .smallbox img {
+    float: left; }
+#main .largebox {
+  width: 480px;
+  height: 240px;
+  float: left;
+  display: block;
+  text-decoration: none; }
+  #main .largebox h2 {
+    font-size: 24px;
+    color: #fff;
+    padding: 60px 30px 0 30px; }
+#main .texture-1 {
+  width: 480px;
+  height: 240px;
+  float: left;
+  z-index: 1;
+  margin: 0 0 0 -480px;
+  text-decoration: none;
+  background: url(../images/textures/texture-1.png) no-repeat; }
+  #main .texture-1:hover {
+    background: url(../images/textures/blue.png) no-repeat 240px 0; }
+  #main .texture-1 h2 {
+    width: 240px;
+    float: right;
+    text-align: center;
+    color: #fff;
+    padding: 75px 0 0 0px; }
+#main .texture-2 {
+  width: 480px;
+  height: 240px;
+  float: left;
+  z-index: 1;
+  margin: 0 0 0 -480px;
+  text-decoration: none;
+  background: url(../images/textures/texture-2.png) no-repeat; }
+  #main .texture-2:hover {
+    background: url(../images/textures/orange.png) no-repeat 240px 0; }
+  #main .texture-2 h2 {
+    width: 240px;
+    float: right;
+    text-align: center;
+    color: #fff;
+    padding: 75px 0 0 0px; }
+#main .texture-3 {
+  width: 480px;
+  height: 240px;
+  float: left;
+  z-index: 1;
+  margin: 0 0 0 -480px;
+  text-decoration: none;
+  background: url(../images/textures/texture-3.png) no-repeat; }
+  #main .texture-3:hover {
+    background: url(../images/textures/offwhite.png) no-repeat 240px 0; }
+  #main .texture-3 h2 {
+    width: 240px;
+    float: right;
+    text-align: center;
+    color: #fff;
+    padding: 75px 0 0 0px;
+    color: #ff5e2e; }
+#main .blue {
+  background: #144057; }
+#main .orange {
+  background: #ff5e2e; }
+  #main .orange:hover {
+    background: #ff6e43; }
+#main .white {
+  background: #fff; }
 #main .about {
   font-family: "old-standard",serif;
   font-style: normal;
