@@ -1,6 +1,8 @@
 @import url("normalize.css");
 @import url("comments.css");
 @import url("form.css");
+@import url("nivo-slider.css");
+@import url("default/default.css");
 
 @mixin futura-bold {
 	font-family: "futura-pt",sans-serif;
@@ -156,6 +158,10 @@ header {
 .slider {
 	height: 480px;
 }
+.theme-default #slider {
+    width:960px; /* Make sure your images are the same size */
+    height:480px; /* Make sure your images are the same size */
+}
 #main {
 	.see-work-top {
 		p {
@@ -181,7 +187,6 @@ header {
 	.featured-content {
 		width: 960px;
 		height: 480px;
-		border-top: 1px dotted;
 	}
 	.work {
 		clear: both;

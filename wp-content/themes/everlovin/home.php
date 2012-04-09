@@ -6,7 +6,17 @@ Template Name: Home
 <?php get_header(); ?>
 	<section class="slider">
 		<div class="container">
-			<img src="<?php bloginfo('template_directory'); ?>/images/slider-holder.png" />
+			<div class="slider-wrapper theme-default">
+	            <div class="ribbon"></div>
+	            <div id="slider" class="nivoSlider">
+	                <img src="<?php bloginfo('template_directory'); ?>/images/slider-holder.png" alt="" title="#htmlcaption" />
+	                <img src="<?php bloginfo('template_directory'); ?>/images/slider-holder.png" alt="" title="#htmlcaption" />
+	                <img src="<?php bloginfo('template_directory'); ?>/images/slider-holder.png" alt="" title="#htmlcaption" />
+	            </div>
+	            <div id="htmlcaption" class="nivo-html-caption">
+	                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+	            </div>
+	        </div>
 		</div>
 	</section>
 	<div id="main">

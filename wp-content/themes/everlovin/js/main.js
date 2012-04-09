@@ -19,5 +19,9 @@ jQuery(document).ready(function($) {
         $('#dribbble').html(html.join(''));
     }, {page: 1, per_page: 1});
 	
-
+    $(window).load(function() {
+        $('#slider').nivoSlider({
+            effect: 'fade'
+        });
+    });
 });
