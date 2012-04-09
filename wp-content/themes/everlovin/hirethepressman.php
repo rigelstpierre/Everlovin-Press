@@ -10,16 +10,16 @@ Template Name: Hire the Press Man
 			<p><?php the_field('top_text'); ?></p>
 			<section class="services">
 				<h2>old-fashioned service with can-do spirit!</h2>
-				<a href="/hire-the-press-man/custom-quotes"><div class="blue">
+				<a href="<?php bloginfo('url'); ?>/hire-the-press-man/custom-quotes"><div class="blue">
 					<h3>Custom<br />quotes</h3>
 				</div></a>
-				<a href="/hire-the-press-man/pricing-guidelines-and-faq/"><div class="orange">
+				<a href="<?php bloginfo('url'); ?>/hire-the-press-man/pricing-guidelines-and-faq/"><div class="orange">
 					<h3>pricing<br/>guidelines<br />&amp; FAQ</h3>
 				</div></a>
-				<a href="/hire-the-press-man/wholesale-ordering/"><div class="white"> 
+				<a href="<?php bloginfo('url'); ?>/hire-the-press-man/wholesale-ordering/"><div class="white"> 
 					<h3>wholesale<br />ordering</h3>
 				</div></a>
-				<a href="/hire-the-press-man/capabilities-and-process/"><div class="black">
+				<a href="<?php bloginfo('url'); ?>/hire-the-press-man/capabilities-and-process/"><div class="black">
 					<h3>capabilities<br />&amp;<br />process</h3>
 				</div></a>
 			</section>
