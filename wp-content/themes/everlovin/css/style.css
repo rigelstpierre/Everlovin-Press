@@ -754,7 +754,8 @@ header {
       font-size: 40px;
       color: #000;
       letter-spacing: 0.2em;
-      text-shadow: 2px 2px 1px #ff5e2e; }
+      text-shadow: 2px 2px 1px #ff5e2e;
+      padding-top: 50px; }
     #main .wholesale-ordering section h2 {
       background: url(../images/talk-line.png) no-repeat center 0; }
     #main .wholesale-ordering section img {
@@ -797,6 +798,48 @@ header {
           text-transform: none; }
           #main .wholesale-ordering section ul li a:hover, #main .wholesale-ordering section ul li a:visited:hover {
             text-decoration: underline; }
+#main .pricing-faq {
+  background: url(../images/pricing-bg.jpg) repeat;
+  padding: 0 0 100px 0; }
+  #main .pricing-faq section {
+    width: 790px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 0 0 50px 0; }
+    #main .pricing-faq section p {
+      padding: 0 80px 0 80px;
+      font-family: "old-standard",serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #144057;
+      font-size: 21px;
+      line-height: 28px;
+      margin: 0 0 20px 0; }
+    #main .pricing-faq section h2 {
+      background: url(../images/pricing-title-line.png) no-repeat center 0;
+      margin-bottom: 25px; }
+    #main .pricing-faq section h3 {
+      font-size: 40px;
+      color: #000;
+      letter-spacing: 0.2em;
+      text-shadow: 2px 2px 1px #ff5e2e;
+      padding-top: 50px; }
+    #main .pricing-faq section article h5 {
+      font-family: "old-standard",serif;
+      font-style: normal;
+      font-weight: 700;
+      color: #144057;
+      padding: 0 80px 0 80px;
+      font-size: 21px;
+      margin: 0; }
+    #main .pricing-faq section article p {
+      font-family: "old-standard",serif;
+      font-style: normal;
+      font-weight: 400;
+      font-style: italic;
+      color: #144057;
+      padding: 0 80px 0 80px;
+      font-size: 21px; }
 #main .single {
   min-height: 1300px;
   border-bottom: 1px solid #000;

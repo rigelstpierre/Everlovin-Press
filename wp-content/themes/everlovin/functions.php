@@ -3,6 +3,7 @@ add_action( 'after_setup_theme', 'lps_theme_setup' );
 add_action( 'wp_print_scripts', 'lps_load_scripts' );
 add_action( 'init', 'customwork_posttype' );
 add_action( 'init', 'readymade_posttype' );
+add_action( 'init', 'faq_posttype' );
 add_filter('body_class','expand_body_classes'); // Adds page slug to the body class
 
 // Includes
@@ -77,6 +78,30 @@ function readymade_posttype() {
 			'public' => true,
 			'menu_position' => 4,
 			'supports' => array( 'title', 'editor', 'thumbnail' ),
+		)
+	);
+}
+
+function faq_posttype() {
+	register_post_type( 'faq',
+		array(
+			'labels' => array(
+			'name' => __( 'FAQs' ),
+			'singular_name' => __( 'FAQ' ),
+			'add_new' => __( 'Add FAQ' ),
+			'add_new_item' => __( 'Add New FAQ' ),
+			'edit' => __( 'Edit' ),
+			'edit_item' => __( 'Edit FAQ' ),
+			'new_item' => __( 'New FAQ' ),
+			'view' => __( 'View FAQ' ),
+			'view_item' => __( 'View FAQ' ),
+			'search_items' => __( 'Search FAQs' ),
+			'not_found' => __( 'No FAQs found' ),
+			'not_found_in_trash' => __( 'No FAQs found in Trash' ),
+			),
+			'public' => true,
+			'menu_position' => 4,
+			'supports' => array( 'title', 'editor' ),
 		)
 	);
 }
