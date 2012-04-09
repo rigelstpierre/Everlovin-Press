@@ -210,8 +210,7 @@ header {
   font-weight: 400;
   font-size: 38px;
   color: #144057;
-  line-height: 52px;
-  letter-spacing: 3px; }
+  line-height: 52px; }
   #main .about h2 {
     background: url(../images/about-title-line.png) no-repeat 0 20px; }
   #main .about p {
@@ -659,6 +658,12 @@ header {
       #main .custom-quotes .quote-form form textarea {
         width: 510px;
         height: 240px; }
+#main .wholesale-ordering {
+  background: url(../images/wholesale-bg.jpg) repeat;
+  padding: 0 0 100px 0; }
+  #main .wholesale-ordering section {
+    width: 790px;
+    margin: 0 auto; }
 #main .single {
   min-height: 1300px;
   border-bottom: 1px solid #000;
@@ -671,6 +676,19 @@ header {
     float: right;
     width: 266px;
     border-left: 1px solid #000; }
+    #main .single aside div {
+      margin: 0 auto;
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      width: 150px;
+      height: 32px;
+      background: #000;
+      text-align: center;
+      color: #fff;
+      font-size: 12px;
+      text-transform: uppercase;
+      line-height: 30px; }
     #main .single aside h3 {
       font-family: "old-standard",serif;
       font-style: normal;
@@ -702,11 +720,14 @@ header {
       height: 25px;
       margin-top: 10px;
       margin-left: 60px;
-      background: url(../images/tweet.png) no-repeat 0 0; }
+      background: url(../images/tweet.png) no-repeat 0 0;
+      text-indent: -999999px; }
       #main .single aside #tweet-button:hover {
         background: url(../images/tweet.png) no-repeat 0 -26px; }
       #main .single aside #tweet-button:active {
         background: url(../images/tweet.png) no-repeat 0 -51px; }
+      #main .single aside #tweet-button a {
+        display: block; }
     #main .single aside #facebook-button {
       display: block;
       float: left;

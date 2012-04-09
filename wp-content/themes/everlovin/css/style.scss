@@ -259,7 +259,6 @@ header {
 		font-size: 38px;
 		color: $darkblue;
 		line-height: 52px;
-		letter-spacing: 3px;
 		h2 {
 			background: url(../images/about-title-line.png) no-repeat 0 20px;
 		}
@@ -776,6 +775,14 @@ header {
 			}
 		}
 	}
+	.wholesale-ordering {
+		background: url(../images/wholesale-bg.jpg) repeat;
+		padding: 0 0 100px 0;
+		section {
+			width: 790px;
+			margin: 0 auto;
+		}
+	}
 	.single {
 		min-height: 1300px;
 		border-bottom: 1px solid #000;
@@ -789,6 +796,18 @@ header {
 			float: right;
 			width: 266px;
 			border-left: 1px solid #000;
+			div {
+				margin: 0 auto;
+				@include futura-bold;
+				width: 150px;
+				height: 32px;
+				background: #000;
+				text-align: center;
+				color: #fff;
+				font-size: 12px;
+				text-transform: uppercase;
+				line-height: 30px;
+			}
 			h3 {
 				@include old-regular;
 				font-size: 36px;
@@ -820,11 +839,15 @@ header {
 				margin-top: 10px;
 				margin-left: 60px;
 				background: url(../images/tweet.png) no-repeat 0 0;
+				text-indent: -999999px;
 				&:hover {
 					background: url(../images/tweet.png) no-repeat 0 -26px;
 				}
 				&:active {
 					background: url(../images/tweet.png) no-repeat 0 -51px;
+				}
+				a {
+					display: block;
 				}
 			}
 			#facebook-button {

@@ -29,7 +29,6 @@ Template Name: See The Work
 						<? the_post_thumbnail(); ?>
 					</div>
 					<a class="texture-3" href="<? the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-
 		        <?php endwhile; wp_reset_postdata(); ?>
 				
 				<?php $the_query = new WP_Query( array('post_type' => array('customwork'),'showposts' => '1', 'offset' => '2' ));

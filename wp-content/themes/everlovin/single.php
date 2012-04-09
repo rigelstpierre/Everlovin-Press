@@ -4,13 +4,18 @@
 				<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<section class="single">
 					<aside>
+						<div>
+							<?php echo get_post_type( $post->ID ); ?>
+						</div>
 						<h3><?php the_title(); ?></h3>
 						<h2>the low-down</h2>
 						<p><?php the_field('low_down'); ?></p>
 						<h2><?php the_field('optional_title'); ?></h2>
 						<p><?php the_field('optional_content'); ?></p>
 						<h2>be generous</h2>
-						<a href="<?php the_permalink(); ?>" id="tweet-button"></a>
+						<div id="tweet-button">
+						  <a href="https://twitter.com/share?url=<?php the_permalink(); ?>" target="_blank">Tweet</a>
+						</div>
 						<a href="<?php the_permalink(); ?>" id="facebook-button"></a>
 						<a href="<?php the_permalink(); ?>" class="pin-it-button" count-layout="none"></a>
 					</aside>
