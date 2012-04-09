@@ -38,7 +38,7 @@ h4 {
   color: #212121;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   text-shadow: 1px 1px 1px #ffffff;
   filter: dropshadow(color=white, offx=1, offy=1); }
 
@@ -64,7 +64,7 @@ h4 {
     display: block; }
 
 #work li.current-menu-item {
-  background: url(../images/big-btn.png) 0 -92px no-repeat;
+  background: url(../images/big-btn.png) 0 -182px no-repeat;
   color: #fff; }
 
 body {
@@ -512,7 +512,8 @@ header {
     text-decoration: none;
     width: 193px;
     height: 34px;
-    background: url(../images/custom.png) no-repeat 0 0; }
+    background: url(../images/custom.png) no-repeat 0 0;
+    text-transform: uppercase; }
     #main nav#services ul .custom a:hover, #main nav#services ul a:visited:hover {
       background: url(../images/custom.png) no-repeat 0 -47px; }
     #main nav#services ul .custom a:active, #main nav#services ul a:visited:active {
@@ -529,6 +530,7 @@ header {
     text-decoration: none;
     width: 179px;
     height: 34px;
+    text-transform: uppercase;
     background: url(../images/pricing.png) no-repeat 0 0; }
     #main nav#services ul .pricing a:hover, #main nav#services ul a:visited:hover {
       background: url(../images/pricing.png) no-repeat 0 -47px; }
@@ -546,6 +548,7 @@ header {
     text-decoration: none;
     width: 245px;
     height: 34px;
+    text-transform: uppercase;
     background: url(../images/process.png) no-repeat 0 0; }
     #main nav#services ul .process a:hover, #main nav#services ul a:visited:hover {
       background: url(../images/process.png) no-repeat 0 -47px; }
@@ -563,10 +566,91 @@ header {
     text-decoration: none;
     width: 143px;
     height: 34px;
+    text-transform: uppercase;
     background: url(../images/wholesale.png) no-repeat 0 0; }
     #main nav#services ul .wholesale a:hover, #main nav#services ul a:visited:hover {
       background: url(../images/wholesale.png) no-repeat 0 -48px; }
     #main nav#services ul .wholesale a:active, #main nav#services ul a:visited:active {
+      background: url(../images/wholesale.png) no-repeat 0 -95px; }
+#main nav#services-white {
+  width: 890px;
+  height: 50px;
+  margin: 0 0 50px 40px;
+  padding-top: 50px; }
+  #main nav#services-white ul li {
+    float: left;
+    margin: 0 30px 0 0; }
+  #main nav#services-white ul .custom a, #main nav#services-white ul a:visited {
+    display: block;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 12px 0 0 0;
+    text-decoration: none;
+    width: 193px;
+    height: 33px;
+    background: url(../images/custom-white.png) no-repeat 0 0;
+    text-transform: uppercase; }
+    #main nav#services-white ul .custom a:hover, #main nav#services-white ul a:visited:hover {
+      background: url(../images/custom-white.png) no-repeat 0 -48px; }
+    #main nav#services-white ul .custom a:active, #main nav#services-white ul a:visited:active {
+      background: url(../images/custom-white.png) no-repeat 0 -95px; }
+  #main nav#services-white ul .pricing a, #main nav#services-white ul a:visited {
+    display: block;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 12px 0 0 0;
+    text-decoration: none;
+    width: 179px;
+    height: 34px;
+    text-transform: uppercase;
+    background: url(../images/pricing-white.png) no-repeat 0 0; }
+    #main nav#services-white ul .pricing a:hover, #main nav#services-white ul a:visited:hover {
+      background: url(../images/pricing-white.png) no-repeat 0 -47px; }
+    #main nav#services-white ul .pricing a:active, #main nav#services-white ul a:visited:active {
+      background: url(../images/pricing-white.png) no-repeat 0 -95px; }
+  #main nav#services-white ul .process a, #main nav#services-white ul a:visited {
+    display: block;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 12px 0 0 0;
+    text-decoration: none;
+    width: 245px;
+    height: 34px;
+    text-transform: uppercase;
+    background: url(../images/process-white.png) no-repeat 0 0; }
+    #main nav#services-white ul .process a:hover, #main nav#services-white ul a:visited:hover {
+      background: url(../images/process-white.png) no-repeat 0 -47px; }
+    #main nav#services-white ul .process a:active, #main nav#services-white ul a:visited:active {
+      background: url(../images/process-white.png) no-repeat 0 -94px; }
+  #main nav#services-white ul .wholesale a, #main nav#services-white ul a:visited {
+    display: block;
+    font-family: "futura-pt",sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    padding: 12px 0 0 0;
+    text-decoration: none;
+    width: 143px;
+    height: 34px;
+    text-transform: uppercase;
+    background: url(../images/wholesale.png) no-repeat 0 0; }
+    #main nav#services-white ul .wholesale a:hover, #main nav#services-white ul a:visited:hover {
+      background: url(../images/wholesale.png) no-repeat 0 -48px; }
+    #main nav#services-white ul .wholesale a:active, #main nav#services-white ul a:visited:active {
       background: url(../images/wholesale.png) no-repeat 0 -95px; }
 #main .capabilities {
   background: #000;
@@ -663,7 +747,56 @@ header {
   padding: 0 0 100px 0; }
   #main .wholesale-ordering section {
     width: 790px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background: #fff;
+    padding: 0 0 50px 0; }
+    #main .wholesale-ordering section h3 {
+      font-size: 40px;
+      color: #000;
+      letter-spacing: 0.2em;
+      text-shadow: 2px 2px 1px #ff5e2e; }
+    #main .wholesale-ordering section h2 {
+      background: url(../images/talk-line.png) no-repeat center 0; }
+    #main .wholesale-ordering section img {
+      margin: 50px 0 50px 80px; }
+    #main .wholesale-ordering section p {
+      padding: 0 80px 0 80px;
+      font-family: "old-standard",serif;
+      font-style: normal;
+      font-weight: 400;
+      color: #144057;
+      font-size: 21px;
+      line-height: 28px;
+      margin: 0 0 20px 0; }
+    #main .wholesale-ordering section h4 {
+      text-align: left;
+      padding: 0 80px 0 80px;
+      color: #ff5e2e;
+      margin: 0; }
+    #main .wholesale-ordering section ul {
+      padding: 50px 0 0 80px;
+      float: left;
+      width: 278px;
+      height: 390px; }
+      #main .wholesale-ordering section ul li {
+        list-style: none;
+        font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        color: #ff5e2e;
+        font-size: 12px;
+        text-transform: uppercase; }
+        #main .wholesale-ordering section ul li a, #main .wholesale-ordering section ul li a:visited {
+          font-family: "old-standard",serif;
+          font-style: normal;
+          font-weight: 400;
+          color: #144057;
+          text-decoration: none;
+          font-size: 21px;
+          line-height: 28px;
+          text-transform: none; }
+          #main .wholesale-ordering section ul li a:hover, #main .wholesale-ordering section ul li a:visited:hover {
+            text-decoration: underline; }
 #main .single {
   min-height: 1300px;
   border-bottom: 1px solid #000;
