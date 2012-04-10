@@ -6,7 +6,6 @@
 					<input type="email" placeholder="email address here" />
 					<input type="submit" value="submit" />
 				</form>
-				<p>update subscription preferences</p>
 			</div>
 			<div class="lastword">
 				<h4>one last word</h4>
