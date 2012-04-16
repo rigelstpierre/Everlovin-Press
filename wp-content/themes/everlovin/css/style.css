@@ -745,10 +745,29 @@ header {
         font-style: normal;
         font-weight: 400;
         border-radius: 0;
-        margin: 5px 0 0 0; }
+        margin: 5px 0 0 0;
+        background: #e6e6e6; }
       #main .custom-quotes .quote-form form textarea {
         width: 510px;
-        height: 240px; }
+        height: 240px;
+        background: #e6e6e6;
+        font-family: "old-standard",serif;
+        font-style: normal;
+        font-weight: 400; }
+      #main .custom-quotes .quote-form form input[type="submit"] {
+        width: 95px;
+        height: 37px;
+        background: url(../images/submit-btn.png) no-repeat 0 0;
+        font-family: "futura-pt",sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        border: none; }
+        #main .custom-quotes .quote-form form input[type="submit"]:hover {
+          background: url(../images/submit-btn.png) no-repeat 0 -38px; }
+        #main .custom-quotes .quote-form form input[type="submit"]:active {
+          background: url(../images/submit-btn.png) no-repeat 0 -76px; }
 #main .wholesale-ordering {
   background: url(../images/wholesale-bg.jpg) repeat;
   padding: 0 0 100px 0; }

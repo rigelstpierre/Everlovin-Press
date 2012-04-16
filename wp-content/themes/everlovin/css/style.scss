@@ -864,10 +864,28 @@ header {
 					@include old-regular;
 					border-radius: 0;
 					margin: 5px 0 0 0;
+					background: #e6e6e6;
 				}
 				textarea {
 					width: 510px;
 					height: 240px;
+					background: #e6e6e6;
+					@include old-regular;
+				}
+				input[type="submit"] {
+					width: 95px;
+					height: 37px;
+					background: url(../images/submit-btn.png) no-repeat 0 0;
+					@include futura-bold;
+					color: #fff;
+					text-align: center;
+					border: none;
+					&:hover {
+						background: url(../images/submit-btn.png) no-repeat 0 -38px;	
+					}
+					&:active {
+						background: url(../images/submit-btn.png) no-repeat 0 -76px;	
+					}
 				}
 			}
 		}
