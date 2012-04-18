@@ -5,18 +5,19 @@ Template Name: Home
 ?>
 <?php get_header(); ?>
 	<section class="slider">
-		<div class="container">
-			<div class="slider-wrapper theme-default">
-	            <div class="ribbon"></div>
-	            <div id="slider" class="nivoSlider">
-	                <img src="<?php bloginfo('template_directory'); ?>/images/slider-holder.png" alt="" title="#htmlcaption" />
-	                <img src="<?php bloginfo('template_directory'); ?>/images/slider-holder.png" alt="" title="#htmlcaption" />
-	                <img src="<?php bloginfo('template_directory'); ?>/images/slider-holder.png" alt="" title="#htmlcaption" />
-	            </div>
-	            <div id="htmlcaption" class="nivo-html-caption">
-	                <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
-	            </div>
-	        </div>
+		<div class="flexslider">
+		  <ul class="slides">
+		    <?php $the_query = new WP_Query( array('post_type' => array('slideshow'), 'showposts' => '5' ));
+	          while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+	        	<li>
+	        		<? the_post_thumbnail(); ?>
+	        		<div class="slide">
+	        			<h1><? the_title(); ?></h1>
+	        			<h3><?php the_content(); ?></h3>
+	        		</div>
+	        	</li>
+	        <?php endwhile; wp_reset_postdata(); ?>
+		  </ul>
 		</div>
 	</section>
 	<div id="main">

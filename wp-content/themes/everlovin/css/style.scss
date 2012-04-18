@@ -1,8 +1,7 @@
 @import url("normalize.css");
 @import url("comments.css");
 @import url("form.css");
-@import url("nivo-slider.css");
-@import url("default/default.css");
+@import url("flexslider.css");
 
 @mixin futura-bold {
 	font-family: "futura-pt",sans-serif;
@@ -157,6 +156,33 @@ header {
 }
 .slider {
 	height: 480px;
+	width: 960px;
+	margin: 0 auto;
+	img {
+		position: absolute;
+		left: 0;
+	}
+	.slide {
+		position: absolute;
+		right: 0;
+		width: 480px;
+		height: 480px;
+		background: #1f1f1f;
+		h1 {
+			@include futura-bold;
+			font-size: 48px;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+			padding-left: 80px;
+			padding-right: 80px;
+			margin: 150px 0 0 0;
+		}
+		h3 {
+			text-align: center;
+			color: $orange;
+		}
+	}
 }
 .theme-default #slider {
     width:960px; /* Make sure your images are the same size */

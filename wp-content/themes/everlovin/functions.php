@@ -4,6 +4,7 @@ add_action( 'wp_print_scripts', 'lps_load_scripts' );
 add_action( 'init', 'customwork_posttype' );
 add_action( 'init', 'readymade_posttype' );
 add_action( 'init', 'faq_posttype' );
+add_action( 'init', 'slideshow_posttype' );
 add_filter('body_class','expand_body_classes'); // Adds page slug to the body class
 
 // Includes
@@ -102,6 +103,30 @@ function faq_posttype() {
 			'public' => true,
 			'menu_position' => 4,
 			'supports' => array( 'title', 'editor' ),
+		)
+	);
+}
+
+function slideshow_posttype() {
+	register_post_type( 'slideshow',
+		array(
+			'labels' => array(
+			'name' => __( 'Slideshow' ),
+			'singular_name' => __( 'Slideshow' ),
+			'add_new' => __( 'Add Slideshow' ),
+			'add_new_item' => __( 'Add New Slideshow' ),
+			'edit' => __( 'Edit' ),
+			'edit_item' => __( 'Edit Slideshow' ),
+			'new_item' => __( 'New Slideshow' ),
+			'view' => __( 'View Slideshow' ),
+			'view_item' => __( 'View Slideshow' ),
+			'search_items' => __( 'Search Slideshow' ),
+			'not_found' => __( 'No Slideshow found' ),
+			'not_found_in_trash' => __( 'No Slideshow found in Trash' ),
+			),
+			'public' => true,
+			'menu_position' => 4,
+			'supports' => array( 'title', 'editor', 'thumbnail' ),
 		)
 	);
 }

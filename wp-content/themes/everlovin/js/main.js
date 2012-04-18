@@ -20,8 +20,6 @@ jQuery(document).ready(function($) {
     }, {page: 1, per_page: 1});
 	
     $(window).load(function() {
-        $('#slider').nivoSlider({
-            effect: 'fade'
-        });
+        $('.flexslider').flexslider();
     });
 });

@@ -13,7 +13,7 @@
 			wp_enqueue_script('dribbble', get_bloginfo('template_directory').'/js/jquery.jribbble-1.0.0.ugly.js', array('jquery'), '1.0');
 
 			// Slider
-			wp_enqueue_script('slider', get_bloginfo('template_directory').'/js/jquery.nivo.slider.pack.js', array('jquery'), '1.0');
+			wp_enqueue_script('slider', get_bloginfo('template_directory').'/js/jquery.flexslider-min.js', array('jquery'), '1.0');
 		
 			// Modernizr
 			wp_enqueue_script('modernizr', get_bloginfo('template_directory').'/js/modernizr-2.0.6.js', array('jquery'), '1.0');

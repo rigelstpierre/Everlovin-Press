@@ -1,8 +1,7 @@
 @import url("normalize.css");
 @import url("comments.css");
 @import url("form.css");
-@import url("nivo-slider.css");
-@import url("default/default.css");
+@import url("flexslider.css");
 /* @group Boilerplate Overrides
 ----------------------------------------------- */
 a, a:active, a:visited {
@@ -104,7 +103,32 @@ header {
         color: #000; }
 
 .slider {
-  height: 480px; }
+  height: 480px;
+  width: 960px;
+  margin: 0 auto; }
+  .slider img {
+    position: absolute;
+    left: 0; }
+  .slider .slide {
+    position: absolute;
+    right: 0;
+    width: 480px;
+    height: 480px;
+    background: #1f1f1f; }
+    .slider .slide h1 {
+      font-family: "futura-pt",sans-serif;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      color: #fff;
+      text-transform: uppercase;
+      text-align: center;
+      padding-left: 80px;
+      padding-right: 80px;
+      margin: 150px 0 0 0; }
+    .slider .slide h3 {
+      text-align: center;
+      color: #ff5e2e; }
 
 .theme-default #slider {
   width: 960px;
