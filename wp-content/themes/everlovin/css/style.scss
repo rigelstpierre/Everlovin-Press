@@ -32,11 +32,11 @@
 	text-decoration: none;
 }
 @mixin texture-h2 {
-	width: 240px;
+	width: 180px;
 	float: right;
 	text-align: center;
 	color: #fff;
-	padding: 75px 0 0 0px;
+	padding: 75px 30px 0 0px;
 }
 
 $orange: #ff5e2e;
@@ -60,7 +60,7 @@ h2 {
 	color: #000;
 	text-align: center;
 	text-transform: uppercase;
-	letter-spacing: 0.3em;
+	letter-spacing: 0.2em;
 }
 
 h3 {
@@ -131,7 +131,7 @@ header {
 	}
 	nav {
 		float: right;
-		margin: 40px 0 0 0;
+		margin: 35px 0 0 0;
 		ul {
 			li {
 				display: inline;
@@ -142,7 +142,7 @@ header {
 					text-decoration: none;
 					text-transform: uppercase;
 					font-size: 14px;
-					letter-spacing: 0.3em;
+					letter-spacing: 0.2em;
 					&:hover {
 						color: #000;
 					}
@@ -286,15 +286,17 @@ header {
 		background: #fff;
 	}
 	.about {
-		@include old-regular;
-		font-size: 38px;
-		color: $darkblue;
-		line-height: 52px;
 		h2 {
-			background: url(../images/about-title-line.png) no-repeat 0 20px;
+			background: url(../images/about-title-line.png) no-repeat 0 5px;
+			margin-top: 50px;
+			margin-bottom: 40px;
 		}
 		p {
 			margin: 0px;
+			@include old-regular;
+			font-size: 38px;
+			color: $darkblue;
+			line-height: 52px;
 		}
 	}
 	.contact {
@@ -304,11 +306,11 @@ header {
 		p {
 			@include futura-book;
 			text-transform: uppercase;
-			font-size: 12px;
+			text-align: center;
+			font-size: 14px;
 			color: $darkblue;
 			line-height: 38px;
-			letter-spacing: 0.3em;
-			margin: 0 0 0 12px;
+			letter-spacing: 0.2em;
 			strong {
 				@include futura-bold;
 			}
@@ -328,7 +330,7 @@ header {
 			height: 370px;
 			float: left;
 			background: url(../images/dribbble-bg.png) no-repeat;
-			margin: 35px 0 35px 45px;
+			margin: 5px 0 35px 45px;
 		}
 		#dribbble {
 			margin: 22px 0 0 15px;
@@ -338,7 +340,7 @@ header {
 			height: 370px;
 			float: left;
 			background: url(../images/twitter-bg.png) no-repeat;
-			margin: 35px 0 35px 10px;
+			margin: 5px 0 35px 10px;
 			ul {
 				padding: 1px 0 0 40px;
 				@include old-regular;
@@ -361,7 +363,7 @@ header {
 	}
 	.furthermore {
 		clear: both;
-		padding: 20px 0 0 0;
+		margin-bottom: 50px;
 		h2 {
 			background: url(../images/furthermore-title-line.png) no-repeat 0 5px;
 		}
@@ -1130,9 +1132,11 @@ footer {
 		width: 370px;
 		height: 120px;
 		float: left;
-		margin: 25px 0 0 40px;
+		margin: 0px 0 0 40px;
 		form {
 			height: 37px;
+			margin: 0;
+
 		}
 		input[type=email] {
 			border: none;
@@ -1157,18 +1161,20 @@ footer {
 			letter-spacing: 0.3em;
 		}
 		p {
+			clear: both;
 			@include old-regular;
 			color: #fff;
 			text-transform: none;
 			font-size: 14px;
 			letter-spacing: normal;
+			margin: 0;
 		}
 	}
 	.lastword {
 		width: 370px;
 		height: 110px;
 		float: right;
-		margin: 25px 40px 0 0; 
+		margin: 0px 40px 0 0; 
 		p {
 			color: #fff;
 			font-size: 40px;
@@ -1185,8 +1191,9 @@ footer {
 		text-transform: uppercase;
 		font-size: 10px;
 		color: #000;
-		letter-spacing: 0.3em;
-		padding-top: 40px;
+		letter-spacing: 0.2em;
+		padding-top: 50px;
+		margin-left: 40px;
 	}
 }
 

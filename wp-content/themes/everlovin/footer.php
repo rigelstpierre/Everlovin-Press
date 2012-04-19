@@ -6,10 +6,11 @@
 					<input type="email" placeholder="email address here" />
 					<input type="submit" value="submit" />
 				</form>
+				<p>*you can unsubscribe at any time</p>
 			</div>
 			<div class="lastword">
 				<h4>one last word</h4>
-				<p>BEING GOOD IS HARD WORK.</h4>
+				<p>BEING GOOD<br /> IS HARD WORK.</h4>
 			</div>
 			<span><p>Copyright &copy;<?php echo date("Y"); ?> <?php bloginfo('name'); ?>. All rights reserved.</p></span>
 		</div>

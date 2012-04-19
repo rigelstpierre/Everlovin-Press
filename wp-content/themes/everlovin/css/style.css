@@ -19,7 +19,7 @@ h2 {
   color: #000;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 0.3em; }
+  letter-spacing: 0.2em; }
 
 h3 {
   font-family: "futura-pt",sans-serif;
@@ -84,7 +84,7 @@ header {
     float: left; }
   header nav {
     float: right;
-    margin: 40px 0 0 0; }
+    margin: 35px 0 0 0; }
     header nav ul li {
       display: inline;
       margin: 0 70px 0 0; }
@@ -96,7 +96,7 @@ header {
         text-decoration: none;
         text-transform: uppercase;
         font-size: 14px;
-        letter-spacing: 0.3em; }
+        letter-spacing: 0.2em; }
         header nav ul li a:hover, header nav ul li a:visited:hover {
           color: #000; }
       header nav ul li a.active {
@@ -189,11 +189,11 @@ header {
   #main .texture-1:hover {
     background: url(../images/textures/blue.png) no-repeat 240px 0; }
   #main .texture-1 h2 {
-    width: 240px;
+    width: 180px;
     float: right;
     text-align: center;
     color: #fff;
-    padding: 75px 0 0 0px; }
+    padding: 75px 30px 0 0px; }
 #main .texture-2 {
   width: 480px;
   height: 240px;
@@ -205,11 +205,11 @@ header {
   #main .texture-2:hover {
     background: url(../images/textures/orange.png) no-repeat 240px 0; }
   #main .texture-2 h2 {
-    width: 240px;
+    width: 180px;
     float: right;
     text-align: center;
     color: #fff;
-    padding: 75px 0 0 0px; }
+    padding: 75px 30px 0 0px; }
 #main .texture-3 {
   width: 480px;
   height: 240px;
@@ -221,11 +221,11 @@ header {
   #main .texture-3:hover {
     background: url(../images/textures/offwhite.png) no-repeat 240px 0; }
   #main .texture-3 h2 {
-    width: 240px;
+    width: 180px;
     float: right;
     text-align: center;
     color: #fff;
-    padding: 75px 0 0 0px;
+    padding: 75px 30px 0 0px;
     color: #ff5e2e; }
 #main .blue {
   background: #144057; }
@@ -235,17 +235,18 @@ header {
     background: #ff6e43; }
 #main .white {
   background: #fff; }
-#main .about {
+#main .about h2 {
+  background: url(../images/about-title-line.png) no-repeat 0 5px;
+  margin-top: 50px;
+  margin-bottom: 40px; }
+#main .about p {
+  margin: 0px;
   font-family: "old-standard",serif;
   font-style: normal;
   font-weight: 400;
   font-size: 38px;
   color: #144057;
   line-height: 52px; }
-  #main .about h2 {
-    background: url(../images/about-title-line.png) no-repeat 0 20px; }
-  #main .about p {
-    margin: 0px; }
 #main .contact {
   height: 39px;
   background: url(../images/contact-bg.png) no-repeat;
@@ -255,11 +256,11 @@ header {
     font-style: normal;
     font-weight: 400;
     text-transform: uppercase;
-    font-size: 12px;
+    text-align: center;
+    font-size: 14px;
     color: #144057;
     line-height: 38px;
-    letter-spacing: 0.3em;
-    margin: 0 0 0 12px; }
+    letter-spacing: 0.2em; }
     #main .contact p strong {
       font-family: "futura-pt",sans-serif;
       font-style: normal;
@@ -276,7 +277,7 @@ header {
     height: 370px;
     float: left;
     background: url(../images/dribbble-bg.png) no-repeat;
-    margin: 35px 0 35px 45px; }
+    margin: 5px 0 35px 45px; }
   #main .social #dribbble {
     margin: 22px 0 0 15px; }
   #main .social .twitter-box {
@@ -284,7 +285,7 @@ header {
     height: 370px;
     float: left;
     background: url(../images/twitter-bg.png) no-repeat;
-    margin: 35px 0 35px 10px; }
+    margin: 5px 0 35px 10px; }
     #main .social .twitter-box ul {
       padding: 1px 0 0 40px;
       font-family: "old-standard",serif;
@@ -303,7 +304,7 @@ header {
           font-size: 10px; }
 #main .furthermore {
   clear: both;
-  padding: 20px 0 0 0; }
+  margin-bottom: 50px; }
   #main .furthermore h2 {
     background: url(../images/furthermore-title-line.png) no-repeat 0 5px; }
 #main .meet-greet-welcome {
@@ -987,9 +988,10 @@ footer {
     width: 370px;
     height: 120px;
     float: left;
-    margin: 25px 0 0 40px; }
+    margin: 0px 0 0 40px; }
     footer .newsletter form {
-      height: 37px; }
+      height: 37px;
+      margin: 0; }
     footer .newsletter input[type=email] {
       border: none;
       width: 240px;
@@ -1015,18 +1017,20 @@ footer {
       text-transform: uppercase;
       letter-spacing: 0.3em; }
     footer .newsletter p {
+      clear: both;
       font-family: "old-standard",serif;
       font-style: normal;
       font-weight: 400;
       color: #fff;
       text-transform: none;
       font-size: 14px;
-      letter-spacing: normal; }
+      letter-spacing: normal;
+      margin: 0; }
   footer .lastword {
     width: 370px;
     height: 110px;
     float: right;
-    margin: 25px 40px 0 0; }
+    margin: 0px 40px 0 0; }
     footer .lastword p {
       color: #fff;
       font-size: 40px;
@@ -1045,8 +1049,9 @@ footer {
     text-transform: uppercase;
     font-size: 10px;
     color: #000;
-    letter-spacing: 0.3em;
-    padding-top: 40px; }
+    letter-spacing: 0.2em;
+    padding-top: 50px;
+    margin-left: 40px; }
 
 /* @group Classes
 ----------------------------------------------- */
