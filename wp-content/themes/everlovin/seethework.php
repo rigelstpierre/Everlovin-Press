@@ -44,7 +44,7 @@ Template Name: See The Work
 		           	<div class="smallbox blue">
 						<? the_post_thumbnail(); ?>
 					</div>
-					<a class="texture-1" href="<? the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
+					<a class="texture-4" href="<? the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 		        <?php endwhile; wp_reset_postdata(); ?>
 			</section>
 			

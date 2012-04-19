@@ -95,6 +95,9 @@ h4 {
 	}
 	&:active {
 		background: url(../images/big-btn.png) 0 -182px no-repeat;
+		a {
+			padding: 0 0 0 5px;
+		}
 	}
 	a, a:visited {
 		text-decoration: none;
@@ -109,6 +112,9 @@ h4 {
 	li.current-menu-item {
 		background: url(../images/big-btn.png) 0 -182px no-repeat;
 		color: #fff;
+		a {
+			padding: 0 0 0 5px;
+		}
 	}
 }
 
@@ -201,6 +207,8 @@ header {
 			ul {
 				width: 960px;
 				height: 91px;
+				margin: 0 auto;
+				padding-top: 15px;
 				margin-bottom: 70px;
 				li {
 					float: left;
@@ -271,6 +279,16 @@ header {
 		h2 {
 			@include texture-h2;
 			color: $orange;	
+		}
+	}
+	.texture-4 {
+		@include textures;
+		background: url(../images/textures/texture-5.png) no-repeat;
+		&:hover {
+			background:  url(../images/textures/blue.png) no-repeat 240px 0;
+		}
+		h2 {
+			@include texture-h2;	
 		}
 	}
 	.blue {
