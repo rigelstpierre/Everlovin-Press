@@ -395,14 +395,14 @@ header {
 			padding-top: 60px;
 		}
 		h2 {
-			font-size: 245px;
+			font-size: 275px;
 			line-height: 1px;
 			padding: 125px 0 0 0;
 			margin: 0;
 			@include futura-bold;
 			color: #ffffff;
 			text-align: center;
-			text-shadow: 5px 5px 2px $orange;
+			text-shadow: 5px 5px 0px $orange;
 			letter-spacing: normal;
 		}
 	}
@@ -493,7 +493,9 @@ header {
 	}
 	.peek {
 		clear: both;
+		width: 965px;
 		height: 1000px;
+		position: relative;
 		margin: 50px 0 0 0;
 		h2 {
 			background: url(../images/peek-title-line.png) no-repeat 0 5px;
@@ -501,6 +503,30 @@ header {
 		img {
 			float: left;
 		}
+		span {
+			padding: 25px 35px;
+			@include futura-bold;
+			font-size: 14px;
+			color: #fff;
+			text-transform: uppercase;
+			text-align: center;
+			background: #000;
+			position: absolute;
+			letter-spacing: 0.2em;
+		}
+		.first {
+			top: 50px;
+			left: 30%;
+		}
+		.second {
+			top: 530px;
+			left: 15%;
+		}
+		.last {
+			top: 530px;
+			right: 9%;
+		}
+
 	}
 	.friends {
 		clear: both;
@@ -537,10 +563,12 @@ header {
 			@include old-regular;
 			color: $darkblue;
 			font-size: 34px;
+			line-height: 52px;
 		}
 		.services {
 			width: 960px;
 			height: 690px;
+			margin-top: 60px;
 			h2 {
 				background: url(../images/services-title-line.png) no-repeat 0 5px;
 			}
@@ -554,6 +582,7 @@ header {
 				margin: 0 10px 10px 0;
 				h3 {
 					font-size: 40px;
+					line-height: 42px;
 					letter-spacing: 0;
 				}
 			}
@@ -605,7 +634,7 @@ header {
 			clear: both;
 			width: 960px;
 			height: 315px;
-			margin: 50px 0 0 0;
+			margin: 80px 0 0 0;
 			h2 {
 				background: url(../images/products-title-line.png) no-repeat 0 5px;
 			}
@@ -620,6 +649,7 @@ header {
 					color: $darkblue;
 					margin: 0 0 30px 0;
 					font-size: 21px;
+					line-height: 15px;
 					text-align: center;
 					@include old-regular;
 				}
@@ -628,12 +658,13 @@ header {
 		.unusual {
 			clear: both;
 			width: 960px;
-			padding: 50px 0 50px 0 ;
+			padding: 20px 0 50px 0 ;
 			h2 {
 				background: url(../images/unusual-title-line.png) no-repeat 0 5px;
 			}
 			p {
 				font-size: 21px;
+				line-height: 28px;
 				color: $darkblue;
 				@include old-regular;
 				padding: 0 125px;

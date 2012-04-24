@@ -37,9 +37,12 @@ Template Name: Meet & Greet
 			<?php endwhile; endif; ?>
 			<section class="peek">
 				<h2>Peek inside the press shop</h2>
-				<img src="<?php bloginfo('template_directory'); ?>/images/peek/first-impressions.jpg" alt="" style="border: 1px solid #000;" />
-				<img src="<?php bloginfo('template_directory'); ?>/images/peek/first-proof.jpg" alt="" />
-				<img src="<?php bloginfo('template_directory'); ?>/images/peek/sweating.jpg" alt="" />
+				<img src="<?php the_field('large_image'); ?>" alt="" style="border: 1px solid #000;" />
+				<span class="first"><?php the_field('large_image_caption'); ?></span>
+				<img src="<?php the_field('left_image'); ?>" alt="" style="border-left: 1px solid #000; border-right: 1px solid #000; border-bottom: 1px solid #000;"/>
+				<span class="second"><?php the_field('left_image_caption'); ?></span>
+				<img src="<?php the_field('right_image'); ?>" alt="" style="border-right: 1px solid #000; border-bottom: 1px solid #000;" />
+				<span class="last"><?php the_field('right_image_caption'); ?></span>
 			</section>
 			<section class="friends">
 				<h2>we love our friends</h2>
