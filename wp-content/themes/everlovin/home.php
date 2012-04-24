@@ -9,13 +9,14 @@ Template Name: Home
 		  <ul class="slides">
 		    <?php $the_query = new WP_Query( array('post_type' => array('slideshow'), 'showposts' => '5' ));
 	          while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-	        	<li>
+	        	<li><a href="<?php the_field('slide_link'); ?>">
 	        		<? the_post_thumbnail(); ?>
 	        		<div class="slide">
 	        			<h1><? the_title(); ?></h1>
 	        			<h3><?php the_content(); ?></h3>
 	        		</div>
-	        	</li>
+	        		
+	        	</a></li>
 	        <?php endwhile; wp_reset_postdata(); ?>
 		  </ul>
 		</div>
