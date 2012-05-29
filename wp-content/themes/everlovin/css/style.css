@@ -55,7 +55,8 @@ h4 {
     background: url(../images/big-btn.png) 0 -92px no-repeat;
     color: #fff; }
   .btn:active, .btn:visited:active {
-    background: url(../images/big-btn.png) 0 -182px no-repeat; }
+    background: url(../images/big-btn.png) 0 -182px no-repeat;
+    margin-top: 10px; }
     .btn:active a, .btn:visited:active a {
       padding: 0 0 0 5px; }
   .btn a, .btn a:visited, .btn:visited a, .btn:visited a:visited {
@@ -68,7 +69,8 @@ h4 {
 
 #work li.current-menu-item {
   background: url(../images/big-btn.png) 0 -182px no-repeat;
-  color: #fff; }
+  color: #fff;
+  margin-top: 10px; }
   #work li.current-menu-item a {
     padding: 0 0 0 5px; }
 
@@ -157,7 +159,7 @@ header {
   #main .see-work-top nav ul li {
     float: left;
     list-style: none;
-    margin: 0 66px 0 0; }
+    margin-right: 66px; }
 #main .featured-content {
   width: 960px;
   height: 480px; }
@@ -199,7 +201,8 @@ header {
     float: right;
     text-align: center;
     color: #fff;
-    padding: 75px 30px 0 0px; }
+    padding: 90px 30px 0 0px;
+    line-height: 18px; }
 #main .texture-2 {
   width: 480px;
   height: 240px;
@@ -215,7 +218,8 @@ header {
     float: right;
     text-align: center;
     color: #fff;
-    padding: 75px 30px 0 0px; }
+    padding: 90px 30px 0 0px;
+    line-height: 18px; }
 #main .texture-3 {
   width: 480px;
   height: 240px;
@@ -231,8 +235,9 @@ header {
     float: right;
     text-align: center;
     color: #fff;
-    padding: 75px 30px 0 0px;
-    color: #ff5e2e; }
+    padding: 90px 30px 0 0px;
+    color: #ff5e2e;
+    line-height: 18px; }
 #main .texture-4 {
   width: 480px;
   height: 240px;
@@ -248,7 +253,8 @@ header {
     float: right;
     text-align: center;
     color: #fff;
-    padding: 75px 30px 0 0px; }
+    padding: 90px 30px 0 0px;
+    line-height: 18px; }
 #main .blue {
   background: #144057; }
 #main .orange {
