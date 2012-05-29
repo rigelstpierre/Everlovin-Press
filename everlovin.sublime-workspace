@@ -4,16 +4,32 @@
 		"selected_items":
 		[
 			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"f",
+				"f	font:"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
 				"text",
-				"text-align"
+				"text-transform"
+			],
+			[
+				"s",
+				"span	Tag"
 			],
 			[
 				"fl",
 				"fl	float: left"
-			],
-			[
-				"mar",
-				"margin"
 			],
 			[
 				"padd",
@@ -42,10 +58,6 @@
 			[
 				"error_",
 				"error_reporting"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"old",
@@ -98,10 +110,6 @@
 			[
 				"paddin",
 				"padding-top"
-			],
-			[
-				"s",
-				"script	Tag"
 			],
 			[
 				"bo",
@@ -180,10 +188,6 @@
 				"strong	Tag"
 			],
 			[
-				"fon",
-				"font-size"
-			],
-			[
 				"se",
 				"section	Tag"
 			],
@@ -219,6 +223,46 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "wp-content/themes/everlovin/footer.php",
+			"settings":
+			{
+				"buffer_size": 1212,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/everlovin/seethework.php",
+			"settings":
+			{
+				"buffer_size": 2227,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/everlovin/home.php",
+			"settings":
+			{
+				"buffer_size": 3239,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/everlovin/meetandgreet.php",
+			"settings":
+			{
+				"buffer_size": 2807,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "wp-content/themes/everlovin/single.php",
+			"settings":
+			{
+				"buffer_size": 2834,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -244,10 +288,10 @@
 	},
 	"file_history":
 	[
-		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/Everlovin-Press/wp-content/themes/everlovin/includes/scripts.php",
-		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/Everlovin-Press/wp-content/themes/everlovin/functions.php",
 		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/Everlovin-Press/wp-content/themes/everlovin/css/style.scss",
 		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/Everlovin-Press/wp-content/themes/everlovin/css/flexslider.css",
+		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/Everlovin-Press/wp-content/themes/everlovin/includes/scripts.php",
+		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/Everlovin-Press/wp-content/themes/everlovin/functions.php",
 		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/Everlovin-Press/wp-content/themes/everlovin/home.php",
 		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/Everlovin-Press/wp-content/themes/everlovin/mail.php",
 		"/Users/rigelstpierre/Dropbox/Everything/Everlovin/Everlovin-Press/wp-content/themes/everlovin/custom.php",
@@ -338,6 +382,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".about",
 			"http://localhost",
 			"bul",
 			"text-sh",
@@ -369,8 +414,144 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "wp-content/themes/everlovin/footer.php",
+					"settings":
+					{
+						"buffer_size": 1212,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								354,
+								354
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "wp-content/themes/everlovin/seethework.php",
+					"settings":
+					{
+						"buffer_size": 2227,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								108,
+								108
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "wp-content/themes/everlovin/home.php",
+					"settings":
+					{
+						"buffer_size": 3239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								369,
+								336
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "wp-content/themes/everlovin/meetandgreet.php",
+					"settings":
+					{
+						"buffer_size": 2807,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1882,
+								1882
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "wp-content/themes/everlovin/single.php",
+					"settings":
+					{
+						"buffer_size": 2834,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1682,
+								1682
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
